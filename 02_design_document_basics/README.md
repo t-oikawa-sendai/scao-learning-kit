@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-INDEX |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -47,10 +47,17 @@
 
 ### テンプレート（コピーして使う）
 
-- [README_TEMPLATE.md](./templates/README_TEMPLATE.md)
-- [REQUEST_TEMPLATE.md](./templates/REQUEST_TEMPLATE.md)
-- [REQUIREMENTS_TEMPLATE.md](./templates/REQUIREMENTS_TEMPLATE.md)
-- [SIMPLE_DESIGN_TEMPLATE.md](./templates/SIMPLE_DESIGN_TEMPLATE.md)
+設計テンプレートは、文書標準の正本と同一のファイル名を持つ 7 ファイル構成（README.md + 6 文書）で固定している。初学者向けでもファイルを減らさず、該当しない設計項目は削除せず「対象外。理由：○○」と記載する。
+
+- [README.md（設計書一覧）](./templates/README.md)
+- [01_REQUEST_DEFINITION.md（要求定義）](./templates/01_REQUEST_DEFINITION.md)
+- [02_REQUIREMENTS_DEFINITION.md（要件定義）](./templates/02_REQUIREMENTS_DEFINITION.md)
+- [03_DATA_AND_SECURITY_DESIGN.md（データ・セキュリティ設計）](./templates/03_DATA_AND_SECURITY_DESIGN.md)
+- [04_UI_AND_FLOW_DESIGN.md（UI・フロー設計）](./templates/04_UI_AND_FLOW_DESIGN.md)
+- [05_ARCHITECTURE_DESIGN.md（アーキテクチャ設計）](./templates/05_ARCHITECTURE_DESIGN.md)
+- [06_OPERATION_AND_HANDOFF.md（運用・詳細設計引き継ぎ）](./templates/06_OPERATION_AND_HANDOFF.md)
+
+> ファイル名を正本・全プロジェクトと統一するのは、横断検索・一括置換・文書比較・リンクの安定・レビュー・保守・自動検査を安定させるためである。
 
 ## 4. Usage Guide（利用方法）
 
@@ -58,7 +65,7 @@
 
 ## 5. Current Status（現在状態）
 
-初版（利用可能）。解説5教材・テンプレート4種すべて Draft 状態で公開している。
+初版（利用可能）。解説5教材、および設計テンプレート7ファイル（README.md + 6文書）すべて Draft 状態で公開している。
 
 ## 6. Related Materials（関連資料）
 
@@ -70,3 +77,4 @@
 | Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
 |---|---|---|---|
 | 0.1 | 2026-07-15 | Initial draft（初版作成）。管理形式準拠のLevel入口READMEへ整備 | Takashi Oikawa |
+| 0.2 | 2026-07-15 | 設計テンプレートを独自4ファイル構成から正本準拠の7ファイル構成（README.md + 6文書）へ修正。テンプレート一覧・現在状態・ファイル名統一の目的を反映 | Takashi Oikawa |

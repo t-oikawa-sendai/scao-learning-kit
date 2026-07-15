@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-REQUIREMENTS |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L2 一覧](./README.md) / [REQUIREMENTS_TEMPLATE](./templates/REQUIREMENTS_TEMPLATE.md) / [要求の基本](./request_definition_basic.md) / [簡易設計の基本](./simple_design_basic.md) |
+| Related Documents（関連文書） | [L2 一覧](./README.md) / [02_REQUIREMENTS_DEFINITION.md テンプレート](./templates/02_REQUIREMENTS_DEFINITION.md) / [要求の基本](./request_definition_basic.md) / [簡易設計の基本](./simple_design_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -94,11 +94,11 @@
 
 ### 4.8 テンプレートに含まれる他の項目
 
-[REQUIREMENTS_TEMPLATE.md](./templates/REQUIREMENTS_TEMPLATE.md) には、上記に加えて次の項目がある。
+[02_REQUIREMENTS_DEFINITION.md（要件定義テンプレート）](./templates/02_REQUIREMENTS_DEFINITION.md) には、上記に加えて次の項目がある。
 
 - 前提条件（Assumptions）：要件が成り立つ前提。要求側の前提と重複させず、要件として必要な前提だけを書く。
 - 未決事項（Open Issues）：まだ決まっていない条件。決まったら更新する。
-- 簡易設計への引き継ぎ（Handoff to Simple Design）：次の段階である簡易設計で特に考慮してほしい点。
+- 詳細設計への引き継ぎ（Handoff to Detail Design）：後続の設計・実装フェーズで特に考慮してほしい点。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
@@ -110,7 +110,7 @@
 ## 6. Related Materials（関連資料）
 
 - [L2 一覧に戻る](./README.md)
-- [REQUIREMENTS_TEMPLATE.md](./templates/REQUIREMENTS_TEMPLATE.md)
+- [02_REQUIREMENTS_DEFINITION.md（要件定義テンプレート）](./templates/02_REQUIREMENTS_DEFINITION.md)
 - [要求の基本](./request_definition_basic.md)
 - [簡易設計の基本](./simple_design_basic.md)
 
@@ -119,3 +119,4 @@
 | Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
 |---|---|---|---|
 | 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
+| 0.2 | 2026-07-15 | 設計テンプレートの7ファイル構成化に伴い、テンプレートへのリンクを 02_REQUIREMENTS_DEFINITION.md へ更新し、引き継ぎ項目の説明を正本の章名（詳細設計への引き継ぎ）へ整合 | Takashi Oikawa |

@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-DESIGN |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L2 一覧](./README.md) / [SIMPLE_DESIGN_TEMPLATE](./templates/SIMPLE_DESIGN_TEMPLATE.md) / [要件の基本](./requirements_definition_basic.md) |
+| Related Documents（関連文書） | [L2 一覧](./README.md) / [設計テンプレート一覧](./templates/README.md) / [要件の基本](./requirements_definition_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -38,9 +38,9 @@
 
 ## 4. Main Content（本文）
 
-簡易設計とは、要件を「どう作るか」に落とし込む、最小限の設計である。
-本格的な設計書ほど詳しくなくてよいが、実装に入る前に整理しておくと迷いが減る。
-一方で、実装コードや具体的なクラス構造まで踏み込みすぎない。
+簡易設計とは、要件を「どう作るか」に落とし込む設計の考え方である。
+学習用・小規模であっても、設計内容を1つの設計書に統合して代替せず、標準の設計ドキュメント（データ・セキュリティ／UI・フロー／アーキテクチャ／運用の各文書）に分けて整理する。
+各文書は必要な範囲で簡潔に書いてよいが、実装コードや具体的なクラス構造まで踏み込みすぎない。
 
 ### 4.1 全体構成
 
@@ -92,15 +92,24 @@
 - 構成・責務・データ・フローを先に整理しておくと、依頼文が具体的になる。
 - AIの出力を確認するときの「チェック基準」にもなる。
 
-### 4.10 テンプレートに含まれる他の項目
+### 4.10 標準の設計ドキュメントとの対応
 
-[SIMPLE_DESIGN_TEMPLATE.md](./templates/SIMPLE_DESIGN_TEMPLATE.md) には、上記に加えて次の項目がある。
+簡易設計で整理する内容は、文書標準の設計ドキュメント（README.md + 6文書の7ファイル構成）のうち、次の各文書に分けて記載する。学習用・小規模でも1つの設計書にまとめて代替せず、標準のファイル構成に沿って整理する。該当しない項目は削除せず「対象外。理由：○○」と書く。
+
+| 簡易設計で整理する内容 | 記載先の標準設計ドキュメント |
+|---|---|
+| データの流れ・保存先・セキュリティ・個人情報 | [03_DATA_AND_SECURITY_DESIGN.md](./templates/03_DATA_AND_SECURITY_DESIGN.md) |
+| 画面・操作フロー・入力チェック・エラー表示 | [04_UI_AND_FLOW_DESIGN.md](./templates/04_UI_AND_FLOW_DESIGN.md) |
+| 全体構成・コンポーネントの責務・外部連携 | [05_ARCHITECTURE_DESIGN.md](./templates/05_ARCHITECTURE_DESIGN.md) |
+| 検証方針・実装への引き継ぎ | [06_OPERATION_AND_HANDOFF.md](./templates/06_OPERATION_AND_HANDOFF.md) |
+
+各テンプレートには、上記に加えて次の共通項目がある。
 
 - 前提条件（Assumptions）：設計が成り立つ前提。
 - 未決事項（Open Issues）：まだ決まっていない設計判断。決まったら更新する。
-- 実装への引き継ぎ（Handoff to Implementation）：実装時に特に注意してほしい点や、AIへ実装依頼するときの注意。
+- 詳細設計への引き継ぎ（Handoff to Detail Design）：実装時に特に注意してほしい点や、AIへ実装依頼するときの注意。
 
-なお、このテンプレートは学習用・小規模ポートフォリオ用に、実務版の4設計書（データ・UI・アーキテクチャ・運用）を簡易統合した派生版である。
+テンプレートの一覧は [設計テンプレート一覧](./templates/README.md) を参照。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
@@ -113,7 +122,7 @@
 ## 6. Related Materials（関連資料）
 
 - [L2 一覧に戻る](./README.md)
-- [SIMPLE_DESIGN_TEMPLATE.md](./templates/SIMPLE_DESIGN_TEMPLATE.md)
+- [設計テンプレート一覧](./templates/README.md)
 - [要件の基本](./requirements_definition_basic.md)
 - [AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md)
 
@@ -122,3 +131,4 @@
 | Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
 |---|---|---|---|
 | 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
+| 0.2 | 2026-07-15 | 標準7ファイル構成を前提とする説明へ修正（4設計書を簡易統合した派生版という記述を削除し、各内容を標準設計ドキュメント03〜06への対応表へ置換）。旧テンプレートへのリンクを設計テンプレート一覧へ更新 | Takashi Oikawa |

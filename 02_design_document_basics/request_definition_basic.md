@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-REQUEST |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L2 一覧](./README.md) / [REQUEST_TEMPLATE](./templates/REQUEST_TEMPLATE.md) / [要件の基本](./requirements_definition_basic.md) |
+| Related Documents（関連文書） | [L2 一覧](./README.md) / [01_REQUEST_DEFINITION.md テンプレート](./templates/01_REQUEST_DEFINITION.md) / [要件の基本](./requirements_definition_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -80,11 +80,11 @@
 
 ### 4.6 テンプレートに含まれる他の項目
 
-[REQUEST_TEMPLATE.md](./templates/REQUEST_TEMPLATE.md) には、上記に加えて次の項目がある。
+[01_REQUEST_DEFINITION.md（要求定義テンプレート）](./templates/01_REQUEST_DEFINITION.md) には、上記に加えて次の項目がある。
 
 - 前提条件（Assumptions）：要求が成り立つ前提（例：個人利用、公開しない）。あいまいな前提を先に洗い出す。
 - 未決事項（Open Issues）：まだ決まっていないこと。分かる範囲で書き、決まったら更新する。
-- 要件定義への引き継ぎ（Handoff to Requirements Definition）：次の段階である要件定義に伝えたい点。要求を「実現側の条件」に落とすときの手がかりになる。
+- 詳細設計への引き継ぎ（Handoff to Detail Design）：後続の要件定義・設計フェーズに伝えたい設計意図や判断経緯。要求を「実現側の条件」に落とすときの手がかりになる。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
@@ -96,7 +96,7 @@
 ## 6. Related Materials（関連資料）
 
 - [L2 一覧に戻る](./README.md)
-- [REQUEST_TEMPLATE.md](./templates/REQUEST_TEMPLATE.md)
+- [01_REQUEST_DEFINITION.md（要求定義テンプレート）](./templates/01_REQUEST_DEFINITION.md)
 - [要件の基本](./requirements_definition_basic.md)
 
 ## 7. Change History（変更履歴）
@@ -104,3 +104,4 @@
 | Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
 |---|---|---|---|
 | 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
+| 0.2 | 2026-07-15 | 設計テンプレートの7ファイル構成化に伴い、テンプレートへのリンクを 01_REQUEST_DEFINITION.md へ更新し、引き継ぎ項目の説明を正本の章名（詳細設計への引き継ぎ）へ整合 | Takashi Oikawa |

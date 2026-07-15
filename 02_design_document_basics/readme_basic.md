@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-README |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L2 一覧](./README.md) / [README_TEMPLATE](./templates/README_TEMPLATE.md) / [ドキュメント管理の基本](./document_management_basic.md) |
+| Related Documents（関連文書） | [L2 一覧](./README.md) / [README.md テンプレート](./templates/README.md) / [ドキュメント管理の基本](./document_management_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -79,7 +79,7 @@ READMEの役割は、次に限定する。
 
 ### 4.5 テンプレートに含まれる項目
 
-[README_TEMPLATE.md](./templates/README_TEMPLATE.md) には、上記に加えて次の項目がある。各項目は概要のみを短く書き、詳細は要求・要件・簡易設計へ分ける。
+[README.md（設計書一覧テンプレート）](./templates/README.md) には、上記に加えて次の項目がある。各項目は概要のみを短く書き、詳細は各設計文書（01_REQUEST_DEFINITION.md 〜 06_OPERATION_AND_HANDOFF.md）へ分ける。
 
 - 課題・解決・効果の概要（Problem / Solution / Benefit Summary）：現在の課題・開発目的・解決方針・システム機能・期待効果・完了判定基準を1〜2文ずつ。
 - 用語集（Glossary）：プロジェクト固有の用語・略語。
@@ -96,7 +96,7 @@ READMEの役割は、次に限定する。
 ## 6. Related Materials（関連資料）
 
 - [L2 一覧に戻る](./README.md)
-- [README_TEMPLATE.md](./templates/README_TEMPLATE.md)
+- [README.md（設計書一覧テンプレート）](./templates/README.md)
 - [ドキュメント管理の基本](./document_management_basic.md)
 
 ## 7. Change History（変更履歴）
@@ -104,3 +104,4 @@ READMEの役割は、次に限定する。
 | Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
 |---|---|---|---|
 | 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
+| 0.2 | 2026-07-15 | 設計テンプレートの7ファイル構成化に伴い、テンプレートへのリンクを README.md（設計書一覧テンプレート）へ更新 | Takashi Oikawa |
