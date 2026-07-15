@@ -5,12 +5,14 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-ROOT-INDEX |
-| Version（バージョン） | 0.3 |
+| Version（バージョン） | 0.4 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L1：AI利用の基本](./01_ai_basics/README.md) / [L2：設計ドキュメントの基本](./02_design_document_basics/README.md) / [L3：ポートフォリオ作成ガイド](./03_portfolio_creation_guide/README.md) / [L4：AIエージェント活用](./04_ai_agentic_workflow/README.md) |
+| Related Documents（関連文書） | [L1：AI利用の基本](./01_ai_basics/README.md) / [L2：設計ドキュメントの基本](./02_design_document_basics/README.md) / [L3：ポートフォリオ作成ガイド](./03_portfolio_creation_guide/README.md) / [L4：AIエージェント活用](./04_ai_agentic_workflow/README.md) / [CHANGELOG.md](./CHANGELOG.md) |
+
+> 詳細な変更履歴は [CHANGELOG.md](./CHANGELOG.md) を参照。
 
 > 本READMEは設計書群ではなく学習用資料集の入口であるため、solacom_main の設計標準README（`docs/standards/templates/design/README.md`）の管理形式を継承しつつ、画面概要（Screen Overview）・設計書一覧（Design Documents Index）を、学習用資料構成概要（Learning Materials Overview）・学習用資料一覧（Learning Materials Index）へ置換している。
 
@@ -25,7 +27,6 @@
 5. [Overall Learning Policy（学習用資料全体方針）](#5-overall-learning-policy学習用資料全体方針)
 6. [Glossary（用語集）](#6-glossary用語集)
 7. [Document Owners and Reviewers（管理者・レビュアー）](#7-document-owners-and-reviewers管理者レビュアー)
-8. [Change History（変更履歴）](#8-change-history変更履歴)
 
 ---
 
@@ -131,13 +132,3 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 |---|---|---|
 | Owner（管理者） | Takashi Oikawa | 全学習用資料（All Materials） |
 | Reviewer（レビュアー） | 未定（TBD） | 全学習用資料（All Materials） |
-
----
-
-## 8. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | 初版作成（L1・L2 初版、L3・L4 準備中）。設計標準READMEの管理形式を継承した教材向け派生READMEへ整備（Initial draft; restructured into learning-oriented derived README） | Takashi Oikawa |
-| 0.2 | 2026-07-15 | L2設計テンプレートを独自4ファイル構成から正本準拠の7ファイル構成（README.md + 6文書）へ修正。教材一覧・教材機能・解決方針・用語集を7ファイル構成へ整合、旧テンプレート名リンクを更新 | Takashi Oikawa |
-| 0.3 | 2026-07-15 | 対象読者をIT職業訓練校に限定しない初学者一般（受講生・独学者・ポートフォリオ作成者などを含む）へ整理し、Project Overview と全体方針を整合。文書内の「教材」表現を「学習用資料」へ用語統一 | Takashi Oikawa |

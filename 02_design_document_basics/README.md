@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-INDEX |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -22,7 +22,6 @@
 4. [Usage Guide（利用方法）](#4-usage-guide利用方法)
 5. [Current Status（現在状態）](#5-current-status現在状態)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
-7. [Change History（変更履歴）](#7-change-history変更履歴)
 
 ---
 
@@ -71,10 +70,3 @@
 
 - [トップに戻る](../README.md)
 - [L1：AI利用の基本](../01_ai_basics/README.md)
-
-## 7. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | Initial draft（初版作成）。管理形式準拠のLevel入口READMEへ整備 | Takashi Oikawa |
-| 0.2 | 2026-07-15 | 設計テンプレートを独自4ファイル構成から正本準拠の7ファイル構成（README.md + 6文書）へ修正。テンプレート一覧・現在状態・ファイル名統一の目的を反映 | Takashi Oikawa |

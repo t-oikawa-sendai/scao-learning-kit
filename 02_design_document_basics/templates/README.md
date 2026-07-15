@@ -17,7 +17,7 @@ README作成方針（初学者向け）
 - スクリーンショットは最小サイズの代表画像のみ掲載する
 - 画面を持たない場合は「対象外。理由：画面を持たないため。」と書いてよい
 - 個人情報・機密情報・APIキー・トークンが写る画像は使用禁止
-- Change History は作業メモにしない
+- CHANGELOG は作業メモにしない
 -->
 
 # Design Documents Index（設計書一覧）
@@ -26,12 +26,14 @@ README作成方針（初学者向け）
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | （記入例: PRJ-README。PRJ を自分のプロジェクト略号に置き換える） |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | （作成日 YYYY-MM-DD） |
 | Last Updated（最終更新日） | （最終更新日 YYYY-MM-DD） |
 | Owner（管理者） | （管理者名） |
-| Related Documents（関連文書） | 01_REQUEST_DEFINITION.md 〜 06_OPERATION_AND_HANDOFF.md |
+| Related Documents（関連文書） | 01_REQUEST_DEFINITION.md 〜 06_OPERATION_AND_HANDOFF.md / [CHANGELOG.md](../../../CHANGELOG.md)（リポジトリルート） |
+
+> 詳細な変更履歴はリポジトリルートの [CHANGELOG.md](../../../CHANGELOG.md) を参照。
 
 ---
 
@@ -44,7 +46,6 @@ README作成方針（初学者向け）
 5. [Overall Design Policy（設計上の全体方針・前提）](#5-overall-design-policy設計上の全体方針前提)
 6. [Glossary（用語集・略語定義）](#6-glossary用語集略語定義)
 7. [Document Owners and Reviewers（文書管理者・レビュアー一覧）](#7-document-owners-and-reviewers文書管理者レビュアー一覧)
-8. [Change History（変更履歴）](#8-change-history変更履歴)
 
 ---
 
@@ -88,12 +89,12 @@ README作成方針（初学者向け）
 
 | File（ファイル名） | Document Name（文書名） | Status（ステータス） | Version（バージョン） | Owner（担当者） |
 |---|---|---|---|---|
-| [01_REQUEST_DEFINITION.md](./01_REQUEST_DEFINITION.md) | Request Definition（要求定義） | Draft | 0.1 | （記入欄） |
-| [02_REQUIREMENTS_DEFINITION.md](./02_REQUIREMENTS_DEFINITION.md) | Requirements Definition（要件定義） | Draft | 0.1 | （記入欄） |
-| [03_DATA_AND_SECURITY_DESIGN.md](./03_DATA_AND_SECURITY_DESIGN.md) | Data and Security Design（データ・セキュリティ設計） | Draft | 0.1 | （記入欄） |
-| [04_UI_AND_FLOW_DESIGN.md](./04_UI_AND_FLOW_DESIGN.md) | UI and Flow Design（UI・フロー設計） | Draft | 0.1 | （記入欄） |
-| [05_ARCHITECTURE_DESIGN.md](./05_ARCHITECTURE_DESIGN.md) | Architecture Design（アーキテクチャ設計） | Draft | 0.1 | （記入欄） |
-| [06_OPERATION_AND_HANDOFF.md](./06_OPERATION_AND_HANDOFF.md) | Operation and Handoff Design（運用・詳細設計引き継ぎ） | Draft | 0.1 | （記入欄） |
+| [01_REQUEST_DEFINITION.md](./01_REQUEST_DEFINITION.md) | Request Definition（要求定義） | Draft | 0.2 | （記入欄） |
+| [02_REQUIREMENTS_DEFINITION.md](./02_REQUIREMENTS_DEFINITION.md) | Requirements Definition（要件定義） | Draft | 0.2 | （記入欄） |
+| [03_DATA_AND_SECURITY_DESIGN.md](./03_DATA_AND_SECURITY_DESIGN.md) | Data and Security Design（データ・セキュリティ設計） | Draft | 0.2 | （記入欄） |
+| [04_UI_AND_FLOW_DESIGN.md](./04_UI_AND_FLOW_DESIGN.md) | UI and Flow Design（UI・フロー設計） | Draft | 0.2 | （記入欄） |
+| [05_ARCHITECTURE_DESIGN.md](./05_ARCHITECTURE_DESIGN.md) | Architecture Design（アーキテクチャ設計） | Draft | 0.2 | （記入欄） |
+| [06_OPERATION_AND_HANDOFF.md](./06_OPERATION_AND_HANDOFF.md) | Operation and Handoff Design（運用・詳細設計引き継ぎ） | Draft | 0.2 | （記入欄） |
 
 ---
 
@@ -123,11 +124,3 @@ README作成方針（初学者向け）
 |---|---|---|
 | Document Owner（文書管理者） | （記入欄） | All Documents（全文書） |
 | Reviewer（レビュアー） | （記入欄） | （記入欄） |
-
----
-
-## 8. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | （作成日 YYYY-MM-DD） | Initial draft（初版作成） | （作成者） |

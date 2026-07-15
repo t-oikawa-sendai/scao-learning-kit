@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-ATTR-BASIC |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -68,9 +68,3 @@ AIは、コードや作業結果を作るだけでなく、その良し悪しを
 - Dipika Khullar, Jack Hopkins, Rowan Wang, Fabien Roger, "Self-Attribution Bias: When AI Monitors Go Easy on Themselves", arXiv:2603.04582. <https://arxiv.org/abs/2603.04582>（確認日：2026-07-15）
 
 より詳しい文献の一覧は [詳細版の References](./self_attribution_bias_detail.md#11-references参考文献公式情報) を参照。
-
-## 8. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | 旧 self_justification_bias.md を簡易版・詳細版へ分割し、簡易版として新規作成（Split from former self_justification_bias.md; created as basic version） | Takashi Oikawa |

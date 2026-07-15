@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-ASK |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -20,7 +20,6 @@
 4. [Main Content（本文）](#4-main-content本文)
 5. [Practical Checkpoints（実務上の確認点）](#5-practical-checkpoints実務上の確認点)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
-7. [Change History（変更履歴）](#7-change-history変更履歴)
 
 ## 1. Purpose（目的）
 
@@ -143,9 +142,3 @@ AIは、頼み方によっては安易に肯定してしまうことがある。
 - [L1 一覧に戻る](./README.md)
 - [Markdownの基本](./markdown_basic.md)
 - [AIが自分の回答を甘く評価する問題（簡易版）](./self_attribution_bias_basic.md)
-
-## 7. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |

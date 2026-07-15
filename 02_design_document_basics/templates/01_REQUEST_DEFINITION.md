@@ -9,7 +9,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | （記入例: PRJ-REQUEST。PRJ を自分のプロジェクト略号に置き換える） |
-| Version（バージョン） | 0.1 |
+| Version（バージョン） | 0.2 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | （作成日 YYYY-MM-DD） |
 | Last Updated（最終更新日） | （最終更新日 YYYY-MM-DD） |
@@ -27,7 +27,6 @@
 5. [Definition Details（定義内容）](#5-definition-details定義内容)
 6. [Open Issues（未決事項）](#6-open-issues未決事項)
 7. [Handoff to Detail Design（詳細設計への引き継ぎ）](#7-handoff-to-detail-design詳細設計への引き継ぎ)
-8. [Change History（変更履歴）](#8-change-history変更履歴)
 
 ---
 
@@ -114,7 +113,7 @@
 
 ## 6. Open Issues（未決事項）
 
-<!-- 設計判断が保留されている事項を記述する。解決したら内容を更新し、変更履歴に記録する -->
+<!-- 設計判断が保留されている事項を記述する。解決したら内容を更新し、CHANGELOG.md に記録する -->
 
 | ID | Open Issue（未決事項） | Owner（担当者） | Due Date（期限） | Status（ステータス） |
 |---|---|---|---|---|
@@ -128,11 +127,3 @@
 <!-- 該当内容がない場合: 「本文書では対象外。理由: 要求定義フェーズでは詳細設計への引き継ぎ事項なし」と記載する -->
 
 （記入欄）
-
----
-
-## 8. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | （作成日 YYYY-MM-DD） | Initial draft（初版作成） | （作成者） |

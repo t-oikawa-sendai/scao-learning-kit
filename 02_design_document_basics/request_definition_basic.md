@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-REQUEST |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -20,7 +20,6 @@
 4. [Main Content（本文）](#4-main-content本文)
 5. [Practical Checkpoints（実務上の確認点）](#5-practical-checkpoints実務上の確認点)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
-7. [Change History（変更履歴）](#7-change-history変更履歴)
 
 ## 1. Purpose（目的）
 
@@ -98,10 +97,3 @@
 - [L2 一覧に戻る](./README.md)
 - [01_REQUEST_DEFINITION.md（要求定義テンプレート）](./templates/01_REQUEST_DEFINITION.md)
 - [要件の基本](./requirements_definition_basic.md)
-
-## 7. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
-| 0.2 | 2026-07-15 | 設計テンプレートの7ファイル構成化に伴い、テンプレートへのリンクを 01_REQUEST_DEFINITION.md へ更新し、引き継ぎ項目の説明を正本の章名（詳細設計への引き継ぎ）へ整合 | Takashi Oikawa |

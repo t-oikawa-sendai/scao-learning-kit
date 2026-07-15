@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-DESIGN |
-| Version（バージョン） | 0.3 |
+| Version（バージョン） | 0.4 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -20,7 +20,6 @@
 4. [Main Content（本文）](#4-main-content本文)
 5. [Practical Checkpoints（実務上の確認点）](#5-practical-checkpoints実務上の確認点)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
-7. [Change History（変更履歴）](#7-change-history変更履歴)
 
 ## 1. Purpose（目的）
 
@@ -138,11 +137,3 @@
 - [設計テンプレート一覧](./templates/README.md)
 - [要件の基本](./requirements_definition_basic.md)
 - [AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md)
-
-## 7. Change History（変更履歴）
-
-| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
-|---|---|---|---|
-| 0.1 | 2026-07-15 | Initial draft（初版作成） | Takashi Oikawa |
-| 0.2 | 2026-07-15 | 標準7ファイル構成を前提とする説明へ修正（4設計書を簡易統合した派生版という記述を削除し、各内容を標準設計ドキュメント03〜06への対応表へ置換）。旧テンプレートへのリンクを設計テンプレート一覧へ更新 | Takashi Oikawa |
-| 0.3 | 2026-07-15 | 簡易設計の定義（文書数ではなく詳細度を絞ること）と、標準7ファイル構成における設計文書03〜06の責務・記載可否を明確化。リンクの不要な半角空白を修正 | Takashi Oikawa |
