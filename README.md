@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-ROOT-INDEX |
-| Version（バージョン） | 0.6 |
+| Version（バージョン） | 0.7 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -75,8 +75,8 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | L1 | 生成AIへの指示方法 | Draft | [how_to_instruct_generative_ai.md](./01_ai_basics/how_to_instruct_generative_ai.md) |
 | L1 | 生成AI利用時の安全ルール | Draft | [ai_safety_basic.md](./01_ai_basics/ai_safety_basic.md) |
 | L1 | LITMと文脈管理 | Draft | [litm_and_context_management.md](./01_ai_basics/litm_and_context_management.md) |
-| L1 | 生成AIの自己正当化バイアス 基礎 | Draft | [self_justification_bias_basic.md](./01_ai_basics/self_justification_bias_basic.md) |
-| L1 | 生成AIの自己正当化に類似した挙動と自己訂正の限界 | Draft | [self_justification_bias_detail.md](./01_ai_basics/self_justification_bias_detail.md) |
+| L1 | 生成AIの自己正当化バイアス 基礎編 | Draft | [self_justification_bias_basic.md](./01_ai_basics/self_justification_bias_basic.md) |
+| L1 | 生成AIの自己正当化バイアス 詳細編 | Draft | [self_justification_bias_detail.md](./01_ai_basics/self_justification_bias_detail.md) |
 | L1 | 移行テンプレート | Draft | [migration_context_template.md](./01_ai_basics/migration_context_template.md) |
 | L2 | 設計ドキュメントの基本（入口） | Draft（利用可能） | [02_design_document_basics/README.md](./02_design_document_basics/README.md) |
 | L2 | READMEの基本 | Draft | [readme_basic.md](./02_design_document_basics/readme_basic.md) |
@@ -123,7 +123,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | 指示 | 生成AIへ与える要求全体（目的・前提・対象範囲・制約・出力形式・完了条件・検証方法・停止条件など）。 |
 | プロンプト | 指示を生成AIへ実際に入力する文章・質問・命令・データ。 |
 | LITM（Lost in the Middle） | 長い文脈の中間にある重要情報が、相対的に参照されにくくなる傾向。 |
-| 自己正当化バイアス（Self-Justification Bias） | 過去の判断・回答を誤りと認めず、後付けの理由で正当化し、誤った方針を維持しようとする傾向。生成AIでは心理状態ではなく、類似した出力挙動として扱う。 |
+| 自己正当化バイアス（Self-Justification Bias） | 生成AIが過去の誤回答・誤判断・誤設計を明確に撤回せず、後付けの理由・一般論・曖昧化によって維持または補強するように見える出力挙動。心理状態の断定ではない。 |
 | 要求（Request） | 何を達成したいか（目的側）の整理。 |
 | 要件（Requirements） | システムが満たすべき条件（実現側）の整理。 |
 | 簡易設計（Simple Design） | 要件を「どう作るか」に落とす設計の考え方。学習用・小規模向けでも設計内容は削減せず、標準の設計ドキュメント（データ・セキュリティ／UI・フロー／アーキテクチャ／運用の各文書）に分けて整理する。 |

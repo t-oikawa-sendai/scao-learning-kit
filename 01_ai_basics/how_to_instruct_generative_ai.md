@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-ASK |
-| Version（バージョン） | 0.4 |
+| Version（バージョン） | 0.5 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L1 一覧](./README.md) / [Markdownの基本](./markdown_basic.md) / [生成AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md) |
+| Related Documents（関連文書） | [L1 一覧](./README.md) / [Markdownの基本](./markdown_basic.md) / [生成AIの自己正当化バイアス 基礎編](./self_justification_bias_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -134,7 +134,7 @@ Markdownの見出し付きで出力してください。
 「良いと思います」だけの回答は不要です。
 ```
 
-なお、これは攻撃的な口調を求めるものではない。また、「迎合なし」と書くだけでは、誤った過去回答の維持や後付け正当化を完全には防げない。詳しくは [生成AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md) を参照。
+なお、これは攻撃的な口調を求めるものではない。また、「迎合なし」と書くだけでは、誤った過去回答の維持や後付け正当化を完全には防げない。詳しくは [生成AIの自己正当化バイアス 基礎編](./self_justification_bias_basic.md) を参照。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
@@ -147,4 +147,4 @@ Markdownの見出し付きで出力してください。
 
 - [L1 一覧に戻る](./README.md)
 - [Markdownの基本](./markdown_basic.md)
-- [生成AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md)
+- [生成AIの自己正当化バイアス 基礎編](./self_justification_bias_basic.md)

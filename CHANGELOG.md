@@ -28,6 +28,12 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 基礎編」へ変更。人間心理学中心の章を削除し名称由来へ縮小。誤り対応4ステップ・停止条件・SCAOの4AI役割分離を明記。ファイル名は未変更 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 詳細編」へ変更。人間心理学中心の章を名称由来へ縮小。出力パターン・自己評価・自己訂正・正本照合・sycophancy・4AI役割分離を整理。ファイル名は未変更 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 対象2文書の表示名・説明を出力挙動中心のタイトルへ統一 | Takashi Oikawa |
+| 0.7 | 2026-07-15 | `README.md` | Changed | L1索引の表示名と用語集の自己正当化バイアス定義を出力挙動中心へ更新 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `01_ai_basics/how_to_instruct_generative_ai.md` | Changed | 自己正当化バイアス基礎へのリンク表示名を「基礎編」へ整合 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `04_ai_agentic_workflow/README.md` | Changed | 詳細編への参照タイトルと対象読者の表現を新タイトルへ整合 | Takashi Oikawa |
 | 0.6 | 2026-07-15 | `README.md` | Changed | 生成AI関連用語を統一。学習用資料一覧・導線・用語集を更新。基本用語を生成AIとし、AI／LLM／AIエージェントの使用範囲と指示／プロンプトの責務を整理。口語「AIへの頼み方」等を除去 | Takashi Oikawa |
 | 0.4 | 2026-07-15 | `01_ai_basics/how_to_instruct_generative_ai.md` | Changed | `how_to_ask_ai.md` を rename。タイトルを「生成AIへの指示方法」へ変更。指示とプロンプトの関係を明記し、口語表現を整理 | Takashi Oikawa |
 | 0.4 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 入口タイトル・目的・資料一覧・利用方法を生成AI用語体系へ整合。rename後の指示方法文書へのリンクを更新 | Takashi Oikawa |
