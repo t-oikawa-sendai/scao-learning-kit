@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-ASK |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L1 一覧](./README.md) / [Markdownの基本](./markdown_basic.md) / [AIが自分の回答を甘く評価する問題（簡易版）](./self_attribution_bias_basic.md) |
+| Related Documents（関連文書） | [L1 一覧](./README.md) / [Markdownの基本](./markdown_basic.md) / [AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md) |
 
 ## Table of Contents（目次）
 
@@ -128,7 +128,7 @@ AIは、頼み方によっては安易に肯定してしまうことがある。
 「良いと思います」だけの回答は不要です。
 ```
 
-なお、これは攻撃的な口調を求めるものではない。また、「迎合なし」と書くだけでは甘い評価を完全には防げない。詳しくは [AIが自分の回答を甘く評価する問題（簡易版）](./self_attribution_bias_basic.md) を参照。
+なお、これは攻撃的な口調を求めるものではない。また、「迎合なし」と書くだけでは、誤った過去回答の維持や後付け正当化を完全には防げない。詳しくは [AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md) を参照。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
@@ -141,4 +141,4 @@ AIは、頼み方によっては安易に肯定してしまうことがある。
 
 - [L1 一覧に戻る](./README.md)
 - [Markdownの基本](./markdown_basic.md)
-- [AIが自分の回答を甘く評価する問題（簡易版）](./self_attribution_bias_basic.md)
+- [AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md)

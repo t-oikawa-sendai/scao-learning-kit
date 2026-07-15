@@ -28,6 +28,12 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.3 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Fixed | 誤テーマ Self-Attribution Bias を訂正し、Self-Justification Bias（自己正当化バイアス）を主題として概念・事例・参考資料を全面再構成。ファイル名を `self_attribution_bias_basic.md` から rename | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Fixed | 誤テーマ Self-Attribution Bias／自己監視の限界を訂正し、自己正当化に類似した出力挙動と自己訂正の限界へ全面再構成。人間の心理現象とAI出力挙動を分離。ファイル名を `self_attribution_bias_detail.md` から rename | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 学習用資料一覧・目的文を自己正当化バイアスへ更新し、基礎／詳細へのリンクを新ファイル名へ修正 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/how_to_ask_ai.md` | Changed | 関連リンクと迎合対策の参照先を自己正当化バイアス基礎へ更新 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `README.md` | Changed | L1索引・学習機能説明・用語集を自己正当化バイアスへ更新。旧ファイル名リンクを新ファイル名へ修正 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `04_ai_agentic_workflow/README.md` | Changed | 対象読者・Usage Guide の参照を自己正当化バイアス詳細へ更新 | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `02_design_document_basics/README.md` | Changed | Change History 章を削除し、履歴管理をリポジトリルート CHANGELOG.md へ移行 | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `02_design_document_basics/document_management_basic.md` | Changed | 履歴管理方式を README＋CHANGELOG の2者方式へ変更。各 Markdown 文書内 Change History の併存規定を廃止（4.3・4.4 等を改訂） | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `02_design_document_basics/readme_basic.md` | Changed | Change History 章を削除し、履歴管理をリポジトリルート CHANGELOG.md へ移行 | Takashi Oikawa |

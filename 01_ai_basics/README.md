@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-INDEX |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -27,7 +27,7 @@
 
 ## 1. Purpose（目的）
 
-AIを安全に使うための基本を身につける。AIへの頼み方、Markdownの最小理解、秘密情報を貼らないこと、AI回答の確認、LITM、AIが自分の回答を甘く評価する問題（自己帰属バイアス）、チャット移行テンプレートを扱う。
+AIを安全に使うための基本を身につける。AIへの頼み方、Markdownの最小理解、秘密情報を貼らないこと、AI回答の確認、LITM、自己正当化に類似した出力挙動、チャット移行テンプレートを扱う。
 
 ## 2. Target Audience（対象読者）
 
@@ -40,10 +40,10 @@ AIを安全に使うための基本を身につける。AIへの頼み方、Mark
 2. [AIへの頼み方](./how_to_ask_ai.md)
 3. [AI利用時の安全ルール](./ai_safety_basic.md)
 4. [LITM（Lost in the Middle）と文脈管理](./litm_and_context_management.md)
-5. [AIが自分の回答を甘く評価する問題（自己帰属バイアス・簡易版）](./self_attribution_bias_basic.md)
-   - 最低限の理解と実践行動を短時間で押さえる。
-6. [AIの自己帰属バイアスと自己監視の限界（詳細版）](./self_attribution_bias_detail.md)
-   - 研究・用語・監視設計・対策を詳しく扱う。
+5. [AIの自己正当化バイアス 基礎](./self_justification_bias_basic.md)
+   - 自己正当化に類似した出力挙動を識別し、誤作業を止める。
+6. [AIの自己正当化に類似した挙動と自己訂正の限界](./self_justification_bias_detail.md)
+   - 理論背景、検出、防止、是正、SCAOとの対応を詳しく扱う。
 7. [移行テンプレート](./migration_context_template.md)
 
 ## 4. Usage Guide（利用方法）

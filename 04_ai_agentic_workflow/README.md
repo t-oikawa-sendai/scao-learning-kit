@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L4-INDEX |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -31,7 +31,7 @@ AIエージェントを、人間の確認を挟みながら安全に活用でき
 
 ## 2. Target Audience（対象読者）
 
-- L1（特に自己帰属バイアス）を踏まえ、AIエージェントの半自動ループを安全に組みたい人
+- L1（特に自己正当化に類似した挙動）を踏まえ、AIエージェントの半自動ループを安全に組みたい人
 
 ## 3. Learning Materials Index（学習用資料一覧）
 
@@ -45,7 +45,7 @@ AIエージェントを、人間の確認を挟みながら安全に活用でき
 
 ## 4. Usage Guide（利用方法）
 
-準備中。公開後に利用方法を記載する。現時点では [L1：AI利用の基本](../01_ai_basics/README.md) の [自己帰属バイアス（詳細版）](../01_ai_basics/self_attribution_bias_detail.md) を参照し、生成と評価を同一AIで自己完結させない考え方を確認することを推奨する。
+準備中。公開後に利用方法を記載する。現時点では [L1：AI利用の基本](../01_ai_basics/README.md) の [AIの自己正当化に類似した挙動と自己訂正の限界](../01_ai_basics/self_justification_bias_detail.md) を参照し、同じAIに作成と最終判定を独占させない考え方を確認することを推奨する。
 
 ## 5. Current Status（現在状態）
 
