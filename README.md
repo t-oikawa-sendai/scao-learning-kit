@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-ROOT-INDEX |
-| Version（バージョン） | 0.7 |
+| Version（バージョン） | 0.8 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -47,7 +47,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | Current Problems（現在の課題） | 初学者は生成AIへの指示が曖昧になりがちで、要求・要件・設計を整理しないまま作り始め、目的とずれた成果物になりやすい。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
 | Development Purpose（開発目的） | AI活用とドキュメント整理の基礎を、初学者が短時間で身につけられる学習用資料を提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
 | Solution Approach（解決方針） | 生成AIへの指示方法・安全・文脈管理（L1）と、要求・要件・簡易設計・ドキュメント管理（L2）を、解説とコピー可能なテンプレートで学べるようにする。 | [L2 テンプレート](./02_design_document_basics/templates/README.md) |
-| Learning Functions（学習用資料機能） | 解説用の学習用資料・移行テンプレート・設計ドキュメント標準の7ファイル構成テンプレート・自己正当化バイアス（基礎／詳細）を、Level別に提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
+| Learning Functions（学習用資料機能） | 解説用の学習用資料・移行テンプレート・設計ドキュメント標準の7ファイル構成テンプレート・自己正当化バイアス（基礎／詳細）・迎合と摩擦回避（基礎／詳細）・Claude Code参考資料を、Level別に提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) / [L4](./04_ai_agentic_workflow/README.md) |
 | Expected Benefits（期待効果） | 生成AIとの意思疎通が正確になり、ポートフォリオの設計・説明の質が上がり、独立した確認（別の生成AI・人間・テスト）の習慣が身につく。 | [L1](./01_ai_basics/README.md) |
 | Completion Criteria（完了判定基準） | L1・L2の考え方を土台に、要求→要件→簡易設計を自力で整理し、生成AIへ具体的な実装指示ができる状態になること。 | [L2](./02_design_document_basics/README.md) |
 
@@ -57,10 +57,10 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 
 本学習用資料集は、Level（L1〜L4）で構成する。L1・L2は初版として利用可能、L3・L4は準備中である。
 
-- L1：生成AIを安全かつ正確に使うための基本（指示方法・Markdown・安全・LITM・自己正当化バイアス・移行テンプレート）。
+- L1：生成AIを安全かつ正確に使うための基本（指示方法・Markdown・安全・LITM・自己正当化バイアス・迎合と摩擦回避・移行テンプレート）。
 - L2：作る前に整理すべき設計ドキュメントの基本（README・要求・要件・簡易設計・ドキュメント管理）と、コピーして使える設計ドキュメント標準の7ファイル構成テンプレート（README.md + 6文書）。
 - L3：ポートフォリオを設計から公開・提出まで仕上げる手順（準備中）。
-- L4：人間確認を挟みながらAIエージェントを活用する方法（準備中）。
+- L4：人間確認を挟みながらAIエージェントを活用する方法（Claude Code参考資料あり。他は準備中）。
 
 読みたい項目から参照してよいが、生成AIで成果物を作る場合はL1・L2の考え方を土台として確認することを推奨する。
 
@@ -77,6 +77,8 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | L1 | LITMと文脈管理 | Draft | [litm_and_context_management.md](./01_ai_basics/litm_and_context_management.md) |
 | L1 | 生成AIの自己正当化バイアス 基礎編 | Draft | [self_justification_bias_basic.md](./01_ai_basics/self_justification_bias_basic.md) |
 | L1 | 生成AIの自己正当化バイアス 詳細編 | Draft | [self_justification_bias_detail.md](./01_ai_basics/self_justification_bias_detail.md) |
+| L1 | 生成AIの迎合と摩擦回避 基礎編 | Draft | [generative_ai_sycophancy_basic.md](./01_ai_basics/generative_ai_sycophancy_basic.md) |
+| L1 | 生成AIの迎合と摩擦回避 詳細編 | Draft | [generative_ai_sycophancy_detail.md](./01_ai_basics/generative_ai_sycophancy_detail.md) |
 | L1 | 移行テンプレート | Draft | [migration_context_template.md](./01_ai_basics/migration_context_template.md) |
 | L2 | 設計ドキュメントの基本（入口） | Draft（利用可能） | [02_design_document_basics/README.md](./02_design_document_basics/README.md) |
 | L2 | READMEの基本 | Draft | [readme_basic.md](./02_design_document_basics/readme_basic.md) |
@@ -92,14 +94,17 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | L2 | 設計テンプレート: 05_ARCHITECTURE_DESIGN.md（アーキテクチャ設計） | Draft | [templates/05_ARCHITECTURE_DESIGN.md](./02_design_document_basics/templates/05_ARCHITECTURE_DESIGN.md) |
 | L2 | 設計テンプレート: 06_OPERATION_AND_HANDOFF.md（運用・詳細設計引き継ぎ） | Draft | [templates/06_OPERATION_AND_HANDOFF.md](./02_design_document_basics/templates/06_OPERATION_AND_HANDOFF.md) |
 | L3 | ポートフォリオ作成ガイド | 準備中 | [03_portfolio_creation_guide/README.md](./03_portfolio_creation_guide/README.md) |
-| L4 | AIエージェント活用 | 準備中 | [04_ai_agentic_workflow/README.md](./04_ai_agentic_workflow/README.md) |
+| L4 | AIエージェント活用（入口） | 準備中 | [04_ai_agentic_workflow/README.md](./04_ai_agentic_workflow/README.md) |
+| L4 | Claude Codeの使い方 参考資料 | Draft | [claude_code_reference.md](./04_ai_agentic_workflow/claude_code_reference.md) |
 
 ### 目的から選ぶ導線
 
 - 生成AIへの指示方法や安全な使い方を知りたい → [L1：生成AI利用の基本](./01_ai_basics/README.md)
+- 生成AIの迎合・摩擦回避を知りたい → [生成AIの迎合と摩擦回避 基礎編](./01_ai_basics/generative_ai_sycophancy_basic.md)
 - 作る前に要求・要件・設計を整理したい → [L2：設計ドキュメントの基本](./02_design_document_basics/README.md)
 - ポートフォリオの作り方の全体像を知りたい → [L3：ポートフォリオ作成ガイド（準備中）](./03_portfolio_creation_guide/README.md)
 - AIエージェントの活用を知りたい → [L4：AIエージェント活用（準備中）](./04_ai_agentic_workflow/README.md)
+- Claude Codeの概念を知りたい → [Claude Codeの使い方 参考資料](./04_ai_agentic_workflow/claude_code_reference.md)
 
 ---
 
@@ -124,6 +129,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | プロンプト | 指示を生成AIへ実際に入力する文章・質問・命令・データ。 |
 | LITM（Lost in the Middle） | 長い文脈の中間にある重要情報が、相対的に参照されにくくなる傾向。 |
 | 自己正当化バイアス（Self-Justification Bias） | 生成AIが過去の誤回答・誤判断・誤設計を明確に撤回せず、後付けの理由・一般論・曖昧化によって維持または補強するように見える出力挙動。心理状態の断定ではない。 |
+| 迎合・摩擦回避（Sycophancy関連） | 生成AIが人間の誤りや矛盾を明確に指摘せず、人間の主張へ合わせ、必要な反論が弱められるように見える出力挙動。心理状態の断定ではない。 |
 | 要求（Request） | 何を達成したいか（目的側）の整理。 |
 | 要件（Requirements） | システムが満たすべき条件（実現側）の整理。 |
 | 簡易設計（Simple Design） | 要件を「どう作るか」に落とす設計の考え方。学習用・小規模向けでも設計内容は削減せず、標準の設計ドキュメント（データ・セキュリティ／UI・フロー／アーキテクチャ／運用の各文書）に分けて整理する。 |

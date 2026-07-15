@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-INDEX |
-| Version（バージョン） | 0.5 |
+| Version（バージョン） | 0.6 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
@@ -27,7 +27,7 @@
 
 ## 1. Purpose（目的）
 
-生成AIを安全に使うための基本を身につける。生成AIへの指示方法、Markdownの最小理解、秘密情報を貼らないこと、生成AI回答の確認、LITM、生成AIの自己正当化バイアス（出力挙動）、チャット移行テンプレートを扱う。
+生成AIを安全に使うための基本を身につける。生成AIへの指示方法、Markdownの最小理解、秘密情報を貼らないこと、生成AI回答の確認、LITM、生成AIの自己正当化バイアス（出力挙動）、生成AIの迎合と摩擦回避（出力挙動）、チャット移行テンプレートを扱う。
 
 ## 2. Target Audience（対象読者）
 
@@ -44,7 +44,11 @@
    - 生成AIが誤回答を撤回せず後付け理由で維持するように見える出力挙動を識別し、誤作業を止める。
 6. [生成AIの自己正当化バイアス 詳細編](./self_justification_bias_detail.md)
    - 出力パターン、自己評価、自己訂正限界、正本照合、4AI役割分離を実務へ落とす。
-7. [移行テンプレート](./migration_context_template.md)
+7. [生成AIの迎合と摩擦回避 基礎編](./generative_ai_sycophancy_basic.md)
+   - 人間の誤りや矛盾を指摘せず主張へ合わせるように見える出力挙動を識別し、外部ブレーキをかける。
+8. [生成AIの迎合と摩擦回避 詳細編](./generative_ai_sycophancy_detail.md)
+   - AIを御する4つの心得、合言葉運用、ルール実体化、4AI役割分離を迎合対策へ落とす。
+9. [移行テンプレート](./migration_context_template.md)
 
 ## 4. Usage Guide（利用方法）
 
@@ -53,7 +57,7 @@
 
 ## 5. Current Status（現在状態）
 
-初版（利用可能）。学習用資料7点すべて Draft 状態で公開している。
+初版（利用可能）。学習用資料9点すべて Draft 状態で公開している。
 
 ## 6. Related Materials（関連資料）
 

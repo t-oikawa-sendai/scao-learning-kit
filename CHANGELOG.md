@@ -28,6 +28,12 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.1 | 2026-07-15 | `01_ai_basics/generative_ai_sycophancy_basic.md` | Added | 初版作成。生成AIの迎合と摩擦回避を出力挙動として整理。典型兆候・外部ブレーキ・合言葉「# 迎合なし　反論歓迎」の都度再投入運用・AIを御する4つの心得概要を記載 | Takashi Oikawa |
+| 0.1 | 2026-07-15 | `01_ai_basics/generative_ai_sycophancy_detail.md` | Added | 初版作成。sycophancy関係・AIを御する4つの心得・合言葉運用・ルール実体化・4AI役割分離を詳細化。自己正当化バイアスとの責務分離を明記 | Takashi Oikawa |
+| 0.1 | 2026-07-15 | `04_ai_agentic_workflow/claude_code_reference.md` | Added | 初版作成。Claude Codeの概念参考資料。チャットとの違い・調査計画編集検証・権限・SCAO役割境界を整理。変動する具体手順は推測せず公式確認を明記 | Takashi Oikawa |
+| 0.6 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 迎合と摩擦回避の基礎編・詳細編への導線を追加。学習用資料数を9点へ更新 | Takashi Oikawa |
+| 0.6 | 2026-07-15 | `04_ai_agentic_workflow/README.md` | Changed | Claude Code参考資料への導線を追加。Usage Guide・現在状態を部分公開に合わせて更新 | Takashi Oikawa |
+| 0.8 | 2026-07-15 | `README.md` | Changed | L1索引へ迎合・摩擦回避を追加。L4へClaude Code参考資料を追加。目的別導線・用語集・構成概要を更新 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 基礎編」へ変更。人間心理学中心の章を削除し名称由来へ縮小。誤り対応4ステップ・停止条件・SCAOの4AI役割分離を明記。ファイル名は未変更 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 詳細編」へ変更。人間心理学中心の章を名称由来へ縮小。出力パターン・自己評価・自己訂正・正本照合・sycophancy・4AI役割分離を整理。ファイル名は未変更 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 対象2文書の表示名・説明を出力挙動中心のタイトルへ統一 | Takashi Oikawa |
