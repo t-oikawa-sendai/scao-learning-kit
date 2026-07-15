@@ -8,7 +8,7 @@
 - 正本パス（リポジトリ内相対）: docs/standards/templates/design/README.md
   設計標準の全体ルールは docs/standards/DESIGN_DOCUMENT_STANDARD.md
 - 派生基準: solacom_main にタグは未設定のため、コミット 0a02282（"Update design document README standard", 2026-06-27）時点の正本を基準に派生しています。
-- 本教材リポジトリには正本を複製しません。Single Source of Truth を守り、二重管理で正本が古くなることを防ぐためです。正本が更新された場合は、上記コミット以降の差分を確認して本テンプレートへ反映します。
+- 本学習用資料リポジトリには正本を複製しません。Single Source of Truth を守り、二重管理で正本が古くなることを防ぐためです。正本が更新された場合は、上記コミット以降の差分を確認して本テンプレートへ反映します。
 -->
 <!--
 README作成方針（初学者向け）
@@ -84,7 +84,7 @@ README作成方針（初学者向け）
 
 ## 4. Design Documents Index（設計書一覧）
 
-<!-- 本教材の設計テンプレートは README.md + 6文書の7ファイル構成で固定する。ファイルを減らさない -->
+<!-- 本学習用資料の設計テンプレートは README.md + 6文書の7ファイル構成で固定する。ファイルを減らさない -->
 
 | File（ファイル名） | Document Name（文書名） | Status（ステータス） | Version（バージョン） | Owner（担当者） |
 |---|---|---|---|---|

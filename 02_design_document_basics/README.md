@@ -18,7 +18,7 @@
 
 1. [Purpose（目的）](#1-purpose目的)
 2. [Target Audience（対象読者）](#2-target-audience対象読者)
-3. [Learning Materials Index（教材一覧）](#3-learning-materials-index教材一覧)
+3. [Learning Materials Index（学習用資料一覧）](#3-learning-materials-index学習用資料一覧)
 4. [Usage Guide（利用方法）](#4-usage-guide利用方法)
 5. [Current Status（現在状態）](#5-current-status現在状態)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
@@ -35,9 +35,9 @@
 - 要求・要件・設計の整理が定まっていない初学者
 - AIへ実装を依頼する前に、目的と条件を言語化したい人
 
-## 3. Learning Materials Index（教材一覧）
+## 3. Learning Materials Index（学習用資料一覧）
 
-### 解説教材
+### 解説用の学習用資料
 
 1. [READMEの基本](./readme_basic.md)
 2. [要求の基本](./request_definition_basic.md)
@@ -65,7 +65,7 @@
 
 ## 5. Current Status（現在状態）
 
-初版（利用可能）。解説5教材、および設計テンプレート7ファイル（README.md + 6文書）すべて Draft 状態で公開している。
+初版（利用可能）。解説用の学習用資料5点、および設計テンプレート7ファイル（README.md + 6文書）すべて Draft 状態で公開している。
 
 ## 6. Related Materials（関連資料）
 

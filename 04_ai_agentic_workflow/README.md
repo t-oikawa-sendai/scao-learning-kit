@@ -18,7 +18,7 @@
 
 1. [Purpose（目的）](#1-purpose目的)
 2. [Target Audience（対象読者）](#2-target-audience対象読者)
-3. [Learning Materials Index（教材一覧）](#3-learning-materials-index教材一覧)
+3. [Learning Materials Index（学習用資料一覧）](#3-learning-materials-index学習用資料一覧)
 4. [Usage Guide（利用方法）](#4-usage-guide利用方法)
 5. [Current Status（現在状態）](#5-current-status現在状態)
 6. [Related Materials（関連資料）](#6-related-materials関連資料)
@@ -34,9 +34,9 @@ AIエージェントを、人間の確認を挟みながら安全に活用でき
 
 - L1（特に自己帰属バイアス）を踏まえ、AIエージェントの半自動ループを安全に組みたい人
 
-## 3. Learning Materials Index（教材一覧）
+## 3. Learning Materials Index（学習用資料一覧）
 
-この領域は準備中のため、教材はまだ作成していない。今後、次の対象を扱う予定（名称のみを示し、本文説明はまだ作成していない）。
+この領域は準備中のため、学習用資料はまだ作成していない。今後、次の対象を扱う予定（名称のみを示し、本文説明はまだ作成していない）。
 
 - Cursor Agent
 - Claude Code
@@ -50,7 +50,7 @@ AIエージェントを、人間の確認を挟みながら安全に活用でき
 
 ## 5. Current Status（現在状態）
 
-準備中（Preparing）。本文教材・詳細章・実装手順はまだ作成していない。
+準備中（Preparing）。本文の学習用資料・詳細章・実装手順はまだ作成していない。
 
 ## 6. Related Materials（関連資料）
 
