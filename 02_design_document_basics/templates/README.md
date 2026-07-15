@@ -1,6 +1,15 @@
 <!-- このファイルはテンプレートです。コピーして、各項目を自分のプロジェクトの内容に書き換えて使ってください。 -->
 <!-- 未確定の項目は、空欄のままか「未確定」と書き、推測を事実として書かないこと。 -->
-<!-- 本テンプレートは学習用・小規模ポートフォリオ用の派生版です。ファイル名・7ファイル構成・各文書の責務は正本と一致させています。実務版の正本は solacom_main/docs/standards/templates/design/README.md を参照してください。 -->
+<!-- 本テンプレートは学習用・小規模ポートフォリオ用の派生版です。ファイル名・README を含む7ファイル構成・各文書の責務は、実務正本と一致させています。 -->
+<!--
+実務正本（Single Source of Truth）について:
+- 正本リポジトリ: solacom_main（GitHub: t-oikawa-sendai/solacom_main）
+- 公開区分: Private。参照には当該リポジトリへのアクセス権が必要です（一般公開されていません）。
+- 正本パス（リポジトリ内相対）: docs/standards/templates/design/README.md
+  設計標準の全体ルールは docs/standards/DESIGN_DOCUMENT_STANDARD.md
+- 派生基準: solacom_main にタグは未設定のため、コミット 0a02282（"Update design document README standard", 2026-06-27）時点の正本を基準に派生しています。
+- 本教材リポジトリには正本を複製しません。Single Source of Truth を守り、二重管理で正本が古くなることを防ぐためです。正本が更新された場合は、上記コミット以降の差分を確認して本テンプレートへ反映します。
+-->
 <!--
 README作成方針（初学者向け）
 - README は設計書群の表紙・入口とする
