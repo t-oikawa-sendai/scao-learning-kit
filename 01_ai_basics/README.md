@@ -1,0 +1,68 @@
+# L1：AI利用の基本
+
+## Document Information（文書情報）
+
+| Item（項目） | Value（値） |
+|---|---|
+| Document ID（文書ID） | SLK-L1-INDEX |
+| Version（バージョン） | 0.1 |
+| Status（ステータス） | Draft |
+| Created Date（作成日） | 2026-07-15 |
+| Last Updated（最終更新日） | 2026-07-15 |
+| Owner（管理者） | Takashi Oikawa |
+| Related Documents（関連文書） | [トップ](../README.md) / [L2：設計ドキュメントの基本](../02_design_document_basics/README.md) |
+
+---
+
+## Table of Contents（目次）
+
+1. [Purpose（目的）](#1-purpose目的)
+2. [Target Audience（対象読者）](#2-target-audience対象読者)
+3. [Learning Materials Index（教材一覧）](#3-learning-materials-index教材一覧)
+4. [Usage Guide（利用方法）](#4-usage-guide利用方法)
+5. [Current Status（現在状態）](#5-current-status現在状態)
+6. [Related Materials（関連資料）](#6-related-materials関連資料)
+7. [Change History（変更履歴）](#7-change-history変更履歴)
+
+---
+
+## 1. Purpose（目的）
+
+AIを安全に使うための基本を身につける。AIへの頼み方、Markdownの最小理解、秘密情報を貼らないこと、AI回答の確認、LITM、AIが自分の回答を甘く評価する問題（自己帰属バイアス）、チャット移行テンプレートを扱う。
+
+## 2. Target Audience（対象読者）
+
+- AIチャットやAIエージェントを使い始めた初学者
+- AIを使ってポートフォリオや小規模アプリを作りたい人
+
+## 3. Learning Materials Index（教材一覧）
+
+1. [Markdownの基本](./markdown_basic.md)
+2. [AIへの頼み方](./how_to_ask_ai.md)
+3. [AI利用時の安全ルール](./ai_safety_basic.md)
+4. [LITM（Lost in the Middle）と文脈管理](./litm_and_context_management.md)
+5. [AIが自分の回答を甘く評価する問題（自己帰属バイアス・簡易版）](./self_attribution_bias_basic.md)
+   - 最低限の理解と実践行動を短時間で押さえる。
+6. [AIの自己帰属バイアスと自己監視の限界（詳細版）](./self_attribution_bias_detail.md)
+   - 研究・用語・監視設計・対策を詳しく扱う。
+7. [移行テンプレート](./migration_context_template.md)
+
+## 4. Usage Guide（利用方法）
+
+上から順に読むと理解しやすいが、必要な項目から参照してもよい。
+AIを使って成果物を作る前に、少なくとも「AIへの頼み方」「AI利用時の安全ルール」には目を通しておくことを推奨する。
+
+## 5. Current Status（現在状態）
+
+初版（利用可能）。7教材すべて Draft 状態で公開している。
+
+## 6. Related Materials（関連資料）
+
+- [トップに戻る](../README.md)
+- [L2：設計ドキュメントの基本](../02_design_document_basics/README.md)
+
+## 7. Change History（変更履歴）
+
+| Version（バージョン） | Date（日付） | Changes（変更内容） | Author（変更者） |
+|---|---|---|---|
+| 0.1 | 2026-07-15 | Initial draft（初版作成）。管理形式準拠のLevel入口READMEへ整備 | Takashi Oikawa |
