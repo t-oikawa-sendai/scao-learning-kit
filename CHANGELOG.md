@@ -28,6 +28,21 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.6 | 2026-07-15 | `README.md` | Changed | 生成AI関連用語を統一。学習用資料一覧・導線・用語集を更新。基本用語を生成AIとし、AI／LLM／AIエージェントの使用範囲と指示／プロンプトの責務を整理。口語「AIへの頼み方」等を除去 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `01_ai_basics/how_to_instruct_generative_ai.md` | Changed | `how_to_ask_ai.md` を rename。タイトルを「生成AIへの指示方法」へ変更。指示とプロンプトの関係を明記し、口語表現を整理 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 入口タイトル・目的・資料一覧・利用方法を生成AI用語体系へ整合。rename後の指示方法文書へのリンクを更新 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/ai_safety_basic.md` | Changed | タイトルを「生成AI利用時の安全ルール」へ変更。本文のサービス総称を生成AIへ、ツール利用主体をAIエージェントへ整理 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/litm_and_context_management.md` | Changed | 文脈参照の限界をLLM、対話主体を生成AIとして用語整理。指示方法文書へのリンクを更新 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/markdown_basic.md` | Changed | 生成AIへの構造化指示の説明へ用語整理。指示方法文書へのリンクを更新 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Changed | 主題は維持し、サービス総称を生成AIへ用語整理。関連リンクを新ファイル名・新タイトルへ更新 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Changed | 主題は維持し、類似出力挙動は生成AI、自己訂正限界はLLMとして用語整理。4AI・禁止表現・参考URLは維持 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `02_design_document_basics/README.md` | Changed | L1参照名と実装前の「指示」表現を生成AI用語体系へ整合 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `02_design_document_basics/simple_design_basic.md` | Changed | 「AIに頼む」等の口語を除去し、生成AIへの実装指示表現へ統一 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `02_design_document_basics/document_management_basic.md` | Changed | 生成AIへの指示表現と安全ルール文書名を用語体系へ整合。CHANGELOGへの相対リンク切れを修正 | Takashi Oikawa |
+| 0.4 | 2026-07-15 | `04_ai_agentic_workflow/README.md` | Changed | L1参照名・自己正当化詳細タイトル・同じ生成AI独占禁止の表現を用語体系へ整合 | Takashi Oikawa |
+| 0.3 | 2026-07-15 | `01_ai_basics/migration_context_template.md` | Changed | 関連リンクを指示方法文書へ更新。「今回の最初の依頼」を「今回の最初の指示」へ用語整理 | Takashi Oikawa |
+| 0.2 | 2026-07-15 | `02_design_document_basics/templates/06_OPERATION_AND_HANDOFF.md` | Changed | コメント内の実装依頼表現を生成AIへの実装指示へ用語整理 | Takashi Oikawa |
+| 0.2 | 2026-07-15 | `02_design_document_basics/templates/README.md` | Fixed | CHANGELOGへの相対リンク切れを修正（`../../../` → `../../`） | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Fixed | 誤テーマ Self-Attribution Bias を訂正し、Self-Justification Bias（自己正当化バイアス）を主題として概念・事例・参考資料を全面再構成。ファイル名を `self_attribution_bias_basic.md` から rename | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Fixed | 誤テーマ Self-Attribution Bias／自己監視の限界を訂正し、自己正当化に類似した出力挙動と自己訂正の限界へ全面再構成。人間の心理現象とAI出力挙動を分離。ファイル名を `self_attribution_bias_detail.md` から rename | Takashi Oikawa |
 | 0.3 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 学習用資料一覧・目的文を自己正当化バイアスへ更新し、基礎／詳細へのリンクを新ファイル名へ修正 | Takashi Oikawa |

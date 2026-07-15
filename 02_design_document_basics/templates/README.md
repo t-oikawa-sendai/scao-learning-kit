@@ -31,9 +31,9 @@ README作成方針（初学者向け）
 | Created Date（作成日） | （作成日 YYYY-MM-DD） |
 | Last Updated（最終更新日） | （最終更新日 YYYY-MM-DD） |
 | Owner（管理者） | （管理者名） |
-| Related Documents（関連文書） | 01_REQUEST_DEFINITION.md 〜 06_OPERATION_AND_HANDOFF.md / [CHANGELOG.md](../../../CHANGELOG.md)（リポジトリルート） |
+| Related Documents（関連文書） | 01_REQUEST_DEFINITION.md 〜 06_OPERATION_AND_HANDOFF.md / [CHANGELOG.md](../../CHANGELOG.md)（リポジトリルート） |
 
-> 詳細な変更履歴はリポジトリルートの [CHANGELOG.md](../../../CHANGELOG.md) を参照。
+> 詳細な変更履歴はリポジトリルートの [CHANGELOG.md](../../CHANGELOG.md) を参照。
 
 ---
 

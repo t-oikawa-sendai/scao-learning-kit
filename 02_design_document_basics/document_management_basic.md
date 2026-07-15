@@ -5,12 +5,12 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L2-DOCMGMT |
-| Version（バージョン） | 0.3 |
+| Version（バージョン） | 0.4 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-07-15 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L2 一覧](./README.md) / [READMEの基本](./readme_basic.md) / [AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md) / [CHANGELOG.md](../../CHANGELOG.md) |
+| Related Documents（関連文書） | [L2 一覧](./README.md) / [READMEの基本](./readme_basic.md) / [生成AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md) / [CHANGELOG.md](../CHANGELOG.md) |
 
 ## Table of Contents（目次）
 
@@ -65,12 +65,12 @@
   - Status を次の正式段階へ進める変更（例：Draft → Review）
 - 軽微な修正（誤字脱字・表記揺れ・リンク修正・意味を変えないレイアウト修正）は、本学習用資料では **Version を据え置き、CHANGELOG.md または Git 履歴で管理する**。初学者が修正のたびに版を上げて混乱しないためで、本学習用資料の各文書も意味のある変更のときだけ版を上げている。運用ルールはプロジェクトごとに統一してよい。
 - Version はリポジトリ全体で一律に揃えるものではない。文書ごとに改訂回数が違うため、**0.1 と 0.2 が混在してよい**。内容を変更していない文書まで機械的に上げない。
-- Version を変えたときは、同時に Last Updated を更新し（必要なら Status も）、リポジトリルートの [CHANGELOG.md](../../CHANGELOG.md) に変更内容を追記する。Document Information の版・日付と CHANGELOG の記録が矛盾しないようにする。
+- Version を変えたときは、同時に Last Updated を更新し（必要なら Status も）、リポジトリルートの [CHANGELOG.md](../CHANGELOG.md) に変更内容を追記する。Document Information の版・日付と CHANGELOG の記録が矛盾しないようにする。
 - 内容が承認され正式版になる場合は、プロジェクトのルールに従って 1.0 とする。何をもって 1.0 とするかは本学習用資料では断定せず、プロジェクトごとに定める。
 
 ### 4.4 変更履歴の管理（CHANGELOG.md）
 
-- 本学習用資料リポジトリでは、変更履歴はリポジトリルートの [CHANGELOG.md](../../CHANGELOG.md) に一元管理する。
+- 本学習用資料リポジトリでは、変更履歴はリポジトリルートの [CHANGELOG.md](../CHANGELOG.md) に一元管理する。
 - 各 Markdown 文書内に履歴章・表を設けない。過去の履歴は CHANGELOG.md で確認する。
 - README（入口）は現在の Version・Status・概要を示し、詳細な履歴は CHANGELOG.md へのリンクで案内する。
 - CHANGELOG には「いつ・何を・なぜ変えたか」など、判断に影響する重要な変更を記録する。作業メモや日報の代わりにしない。
@@ -95,23 +95,23 @@
 - 「文書には更新済みと書いてあるのに、実物は古いまま」を避ける。
 - 秘密情報はGit履歴にも残るため、そもそもコミットしない（[安全ルール](../01_ai_basics/ai_safety_basic.md) 参照）。
 
-### 4.8 AIに文書構成を勝手に増やさせない
+### 4.8 生成AIに文書構成を勝手に増やさせない
 
-- AIに依頼すると、頼んでいないドキュメントを新規作成することがある。
+- 生成AIに指示すると、依頼していないドキュメントを新規作成することがある。
 - ドキュメントが増えすぎると、管理しきれなくなる。
-- 「新しいファイルを勝手に作らないでほしい」と依頼文で明示する。
+- 「新しいファイルを勝手に作らないでほしい」と指示（プロンプト）で明示する。
 
 ## 5. Practical Checkpoints（実務上の確認点）
 
 - 正本が1つに定まっているか。
 - 文書情報（Version・Status・日付・Owner・Related Documents）があるか。
-- 重要な変更が [CHANGELOG.md](../../CHANGELOG.md) に記録されているか。
+- 重要な変更が [CHANGELOG.md](../CHANGELOG.md) に記録されているか。
 - README・要求・要件・設計の内容が食い違っていないか。
-- AIが勝手に文書を増やしていないか。
+- 生成AIが勝手に文書を増やしていないか。
 
 ## 6. Related Materials（関連資料）
 
 - [L2 一覧に戻る](./README.md)
 - [READMEの基本](./readme_basic.md)
-- [AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md)
-- [CHANGELOG.md](../../CHANGELOG.md)
+- [生成AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md)
+- [CHANGELOG.md](../CHANGELOG.md)
