@@ -1,57 +1,42 @@
-# 移行テンプレート
+# AI専用・新チャット文脈移行プロトコル
 
-## Document Information（文書情報）
+## [PROJECT_METADATA]
+* **PROJECT_NAME**: {{プロジェクト名}}
+* **REPOSITORY_URI**: {{リポジトリURL/なし}}
+* **LOCAL_WORKSPACE_PATH**: {{ローカル絶対パス}}
+* **CURRENT_GIT_BRANCH**: {{ブランチ名}}
+* **TARGET_ENVIRONMENT**: {{OS、言語バージョン、DB、IDE等の環境スタック}}
 
-| Item（項目） | Value（値） |
-|---|---|
-| Document ID（文書ID） | SLK-L1-MIGRATE |
-| Version（バージョン） | 0.3 |
-| Status（ステータス） | Draft |
-| Created Date（作成日） | 2026-07-15 |
-| Last Updated（最終更新日） | 2026-07-15 |
-| Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L1 一覧](./README.md) / [LITMと文脈管理](./litm_and_context_management.md) / [生成AIへの指示方法](./how_to_instruct_generative_ai.md) |
+## [KNOWLEDGE_STATE_SNAPSHOT]
+### 1. CORE_OBJECTIVE
+* {{このチャット、またはタスクが最終的に達成すべき目的}}
 
-## 使用目的（Purpose）
+### 2. BACKGROUND_AND_PREMISES
+* {{前提知識、ビジネス背景、制約条件}}
 
-チャットが長くなりすぎたときに、別のチャットへ作業を引き継ぐためのテンプレート。
-LITM（重要情報が中間で埋もれる問題）を避け、新しいチャットへ前提・状態・次の作業を正確に渡すために使う。
+### 3. FROZEN_SPECIFICATIONS (FACT)
+* {{これまでに確定した仕様、アルゴリズム、データ構造。覆してはならない決定事項}}
 
-## 使用上の注意（Usage Notes）
+### 4. COMPLETED_WORK_LOG
+* {{これまでに実装・検証が完了した内容。再提案・重複実装を防止するためのログ}}
 
-- 以下の11章の見出しをコピーして、それぞれの下に内容を書き込んで使う。
-- 見出しの番号や文言は変えないこと。分からない項目は「未確認」と書く。
-- 実値のAPIキー・パスワード・トークンなどの秘密情報は書かない。
-- 推測を事実として書かない。
+### 5. CURRENT_SYSTEM_STATUS
+* **LAST_COMMIT_HASH**: {{最新コミットハッシュ}}
+* **WORKSPACE_STATUS**: {{クリーン / 未コミット変更あり（具体的なファイル名）}}
+* **BUILD_STATUS**: {{SUCCESS / FAILED（エラーログ抜粋）}}
+* **TEST_STATUS**: {{PASS / FAIL（未解決の失敗テストケース）}}
 
----
+### 6. IDENTIFIED_ISSUES
+* {{現在発生しているバグ、未解決の技術的課題、ボトルネック}}
 
-# 新チャット引き継ぎメモ
+### 7. SOURCE_FILES_TO_REFERENCE
+* {{AIがコンテキスト読み込み時に最優先で参照・解析すべきファイルパスの一覧}}
 
-## 1. 対象プロジェクト
+## [NEXT_ACTION_INSTRUCTION]
+* **IMMEDIATE_TASK**: {{翌朝、このプロトコルを読み込んだ直後にAIが実行すべき最初の具体的な指示}}
 
-## 2. このチャットの目的
-
-## 3. 背景・前提
-
-## 4. 確定済み仕様
-
-## 5. 完了済み作業
-
-## 6. 現在の状態
-
-## 7. 未解決事項
-
-## 8. 次に行う作業
-
-## 9. 禁止事項
-
-## 10. 参照すべきファイル
-
-## 11. 今回の最初の指示
-
----
-
-## 上位に戻る
-
-- [L1 一覧に戻る](./README.md)
+## [GUARD_RAILS_AND_CONSTRAINTS]
+1.  **NO_HALLUCINATION**: 公式仕様や確定ソース（Fact）にない仕様を推測（Inference）で補完してはならない。不明点は即座に質問せよ。
+2.  **NO_UNAUTHORIZED_IMPLEMENTATION**: 指示のないコード追加、リファクタリング、および機能拡張を厳禁とする。
+3.  **NO_DESTRUCTIVE_CHANGES**: 既存の確定仕様や動作確認済みコードを破壊・退行（デグレード）させる変更を提案・実装してはならない。
+4.  **DATA_PRIVACY**: 機密情報、個人情報、認証資格情報を出力に含めてはならない。
