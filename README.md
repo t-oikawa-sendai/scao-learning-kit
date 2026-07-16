@@ -47,7 +47,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | Current Problems（現在の課題） | 初学者は生成AIへの指示が曖昧になりがちで、要求・要件・設計を整理しないまま作り始め、目的とずれた成果物になりやすい。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
 | Development Purpose（開発目的） | AI活用とドキュメント整理の基礎を、初学者が短時間で身につけられる学習用資料を提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
 | Solution Approach（解決方針） | 生成AIへの指示方法・安全・文脈管理（L1）と、要求・要件・簡易設計・ドキュメント管理（L2）を、解説とコピー可能なテンプレートで学べるようにする。 | [L2 テンプレート](./02_design_document_basics/templates/README.md) |
-| Learning Functions（学習用資料機能） | 解説用の学習用資料・移行テンプレート・設計ドキュメント標準の7ファイル構成テンプレート・自己正当化バイアス（基礎／詳細）・迎合と摩擦回避（基礎／詳細）・Claude Code参考資料を、Level別に提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) / [L4](./04_ai_agentic_workflow/README.md) |
+| Learning Functions（学習用資料機能） | 解説用の学習用資料・移行テンプレート・設計ドキュメント標準の7ファイル構成テンプレート・自己正当化バイアス（基礎／詳細）・迎合と摩擦回避（基礎／詳細）を、Level別に提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) / [L4](./04_ai_agentic_workflow/README.md) |
 | Expected Benefits（期待効果） | 生成AIとの意思疎通が正確になり、ポートフォリオの設計・説明の質が上がり、独立した確認（別の生成AI・人間・テスト）の習慣が身につく。 | [L1](./01_ai_basics/README.md) |
 | Completion Criteria（完了判定基準） | L1・L2の考え方を土台に、要求→要件→簡易設計を自力で整理し、生成AIへ具体的な実装指示ができる状態になること。 | [L2](./02_design_document_basics/README.md) |
 
@@ -60,7 +60,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 - L1：生成AIを安全かつ正確に使うための基本（指示方法・Markdown・安全・LITM・自己正当化バイアス・迎合と摩擦回避・移行テンプレート）。
 - L2：作る前に整理すべき設計ドキュメントの基本（README・要求・要件・簡易設計・ドキュメント管理）と、コピーして使える設計ドキュメント標準の7ファイル構成テンプレート（README.md + 6文書）。
 - L3：ポートフォリオを設計から公開・提出まで仕上げる手順（準備中）。
-- L4：人間確認を挟みながらAIエージェントを活用する方法（Claude Code参考資料あり。他は準備中）。
+- L4：人間確認を挟みながらAIエージェントを活用する方法（準備中）。
 
 読みたい項目から参照してよいが、生成AIで成果物を作る場合はL1・L2の考え方を土台として確認することを推奨する。
 
@@ -95,7 +95,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 | L2 | 設計テンプレート: 06_OPERATION_AND_HANDOFF.md（運用・詳細設計引き継ぎ） | Draft | [templates/06_OPERATION_AND_HANDOFF.md](./02_design_document_basics/templates/06_OPERATION_AND_HANDOFF.md) |
 | L3 | ポートフォリオ作成ガイド | 準備中 | [03_portfolio_creation_guide/README.md](./03_portfolio_creation_guide/README.md) |
 | L4 | AIエージェント活用（入口） | 準備中 | [04_ai_agentic_workflow/README.md](./04_ai_agentic_workflow/README.md) |
-| L4 | Claude Codeの使い方 参考資料 | Draft | [claude_code_reference.md](./04_ai_agentic_workflow/claude_code_reference.md) |
+| L4 | Claude Codeの使い方 参考資料 | 準備中 | - |
 
 ### 目的から選ぶ導線
 
@@ -104,7 +104,7 @@ SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや
 - 作る前に要求・要件・設計を整理したい → [L2：設計ドキュメントの基本](./02_design_document_basics/README.md)
 - ポートフォリオの作り方の全体像を知りたい → [L3：ポートフォリオ作成ガイド（準備中）](./03_portfolio_creation_guide/README.md)
 - AIエージェントの活用を知りたい → [L4：AIエージェント活用（準備中）](./04_ai_agentic_workflow/README.md)
-- Claude Codeの概念を知りたい → [Claude Codeの使い方 参考資料](./04_ai_agentic_workflow/claude_code_reference.md)
+- Claude Codeの概念を知りたい → Claude Codeの使い方 参考資料（準備中）
 
 ---
 
