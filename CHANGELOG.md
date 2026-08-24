@@ -28,6 +28,11 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.9 | 2026-08-24 | `README.md` | Changed | Repositoryの主目的を「IT初学者が生成AIを活用してPFを設計・実装・完成させる学習用資料集」へ明確化。L1〜L4の難易度構造を主軸から外し、01 AI利用の基礎 / 02 PF設計・ドキュメント / 03 AIを活用したPF作成の3領域へ再構成。04 AIエージェント活用を初版の有効な学習導線から除外 | Takashi Oikawa |
+| 0.7 | 2026-08-24 | `01_ai_basics/README.md` | Changed | PF作成での生成AI利用を中心に、利用方法 / 限界・注意事項 / メリット・デメリットの3観点へ再整理。既存9資料は維持し、メリット・デメリット・限界を俯瞰する専用資料の不足を明示 | Takashi Oikawa |
+| 0.5 | 2026-08-24 | `02_design_document_basics/README.md` | Changed | PF設計・ドキュメント領域として再整理。要求→要件→設計→実装指示の流れ、7ファイル設計テンプレート、ドキュメント管理の責務を明確化。7ファイル構成とファイル名固定ルールは維持 | Takashi Oikawa |
+| 0.3 | 2026-08-24 | `03_portfolio_creation_guide/README.md` | Changed | 01・02の教材を実際のPF作成へつなぐ領域として再設計。要求・要件整理、設計書作成、実装指示、AI支援実装、テスト、レビュー、設計と実装の整合、公開・提出までの基本フローを定義 | Takashi Oikawa |
+| 0.1 | 2026-08-24 | `project-notes/CURRENT.md` | Added | Repositoryの現在地点・確定方針・対象外・次工程・再開順を記録するProject Noteを追加。04は物理的に残すが初版対象外とし、01→02→03の順で本文棚卸しを進める方針を記録 | Takashi Oikawa |
 | 0.4 | 2026-07-26 | `01_ai_basics/migration_context_template.md` | Changed | 文脈移行テンプレートを新構成へ改訂。BACKGROUND_AND_PREMISES を維持。ADOPTED_DECISIONS・REJECTED_APPROACHES を追加。OPEN_ISSUES を分離。CURRENT_STATUS をコード・文書共通表現（WORK_PRODUCT_STATUS、VERIFICATION_STATUS、RELEASE_OR_PUBLICATION_STATUS）へ一般化。NEXT_ACTION に DO_NOT_DO_YET・STOP_CONDITIONS を追加。HANDOFF_VALIDATION と SAFE_TO_CONTINUE（YES / CONDITIONAL / NO）判定を追加。旧章 KNOWLEDGE_STATE_SNAPSHOT を統合廃止 | Takashi Oikawa |
 | 0.1 | 2026-07-15 | `01_ai_basics/generative_ai_sycophancy_basic.md` | Added | 初版作成。生成AIの迎合と摩擦回避を出力挙動として整理。典型兆候・外部ブレーキ・合言葉「# 迎合なし　反論歓迎」の都度再投入運用・AIを御する4つの心得概要を記載 | Takashi Oikawa |
 | 0.1 | 2026-07-15 | `01_ai_basics/generative_ai_sycophancy_detail.md` | Added | 初版作成。sycophancy関係・AIを御する4つの心得・合言葉運用・ルール実体化・4AI役割分離を詳細化。自己正当化バイアスとの責務分離を明記 | Takashi Oikawa |
@@ -36,7 +41,7 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 | 0.6 | 2026-07-15 | `04_ai_agentic_workflow/README.md` | Changed | Claude Code参考資料への導線を追加。Usage Guide・現在状態を部分公開に合わせて更新 | Takashi Oikawa |
 | 0.8 | 2026-07-15 | `README.md` | Changed | L1索引へ迎合・摩擦回避を追加。L4へClaude Code参考資料を追加。目的別導線・用語集・構成概要を更新 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_basic.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 基礎編」へ変更。人間心理学中心の章を削除し名称由来へ縮小。誤り対応4ステップ・停止条件・SCAOの4AI役割分離を明記。ファイル名は未変更 | Takashi Oikawa |
-| 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 詳細編」へ変更。人間心理学中心の章を名称由来へ縮小。出力パターン・自己評価・自己訂正・正本照合・sycophancy・4AI役割分離を整理。ファイル名は未変更 | Takashi Oikawa |
+| 0.5 | 2026-07-15 | `01_ai_basics/self_justification_bias_detail.md` | Changed | 生成AIの出力挙動中心へ再設計。タイトルを「生成AIの自己正当化バイアス 詳細編」へ変更。人間心理学中心の章を名称由来へ縮小。出力パターン・自己評価・自己訂正限界・正本照合・sycophancy・4AI役割分離を整理。ファイル名は未変更 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/README.md` | Changed | 対象2文書の表示名・説明を出力挙動中心のタイトルへ統一 | Takashi Oikawa |
 | 0.7 | 2026-07-15 | `README.md` | Changed | L1索引の表示名と用語集の自己正当化バイアス定義を出力挙動中心へ更新 | Takashi Oikawa |
 | 0.5 | 2026-07-15 | `01_ai_basics/how_to_instruct_generative_ai.md` | Changed | 自己正当化バイアス基礎へのリンク表示名を「基礎編」へ整合 | Takashi Oikawa |
