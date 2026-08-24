@@ -5,147 +5,212 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-ROOT-INDEX |
-| Version（バージョン） | 0.8 |
+| Version（バージョン） | 0.9 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
-| Last Updated（最終更新日） | 2026-07-15 |
+| Last Updated（最終更新日） | 2026-08-24 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L1：生成AI利用の基本](./01_ai_basics/README.md) / [L2：設計ドキュメントの基本](./02_design_document_basics/README.md) / [L3：ポートフォリオ作成ガイド](./03_portfolio_creation_guide/README.md) / [L4：AIエージェント活用](./04_ai_agentic_workflow/README.md) / [CHANGELOG.md](./CHANGELOG.md) |
+| Related Documents（関連文書） | [01：AI利用の基礎](./01_ai_basics/README.md) / [02：PF設計・ドキュメント](./02_design_document_basics/README.md) / [03：AIを活用したPF作成](./03_portfolio_creation_guide/README.md) / [CHANGELOG.md](./CHANGELOG.md) |
 
 > 詳細な変更履歴は [CHANGELOG.md](./CHANGELOG.md) を参照。
-
-> 本READMEは設計書群ではなく学習用資料集の入口であるため、solacom_main の設計標準README（`docs/standards/templates/design/README.md`）の管理形式を継承しつつ、画面概要（Screen Overview）・設計書一覧（Design Documents Index）を、学習用資料構成概要（Learning Materials Overview）・学習用資料一覧（Learning Materials Index）へ置換している。
 
 ---
 
 ## Table of Contents（目次）
 
-1. [Project Overview（プロジェクト・学習用資料概要）](#1-project-overviewプロジェクト学習用資料概要)
-2. [Problem / Solution / Benefit Summary（課題・解決・効果の概要）](#2-problem--solution--benefit-summary課題解決効果の概要)
-3. [Learning Materials Overview（学習用資料構成概要）](#3-learning-materials-overview学習用資料構成概要)
-4. [Learning Materials Index（学習用資料一覧）](#4-learning-materials-index学習用資料一覧)
-5. [Overall Learning Policy（学習用資料全体方針）](#5-overall-learning-policy学習用資料全体方針)
-6. [Glossary（用語集）](#6-glossary用語集)
-7. [Document Owners and Reviewers（管理者・レビュアー）](#7-document-owners-and-reviewers管理者レビュアー)
+1. [Project Overview（概要）](#1-project-overview概要)
+2. [Purpose（目的）](#2-purpose目的)
+3. [Learning Structure（学習構造）](#3-learning-structure学習構造)
+4. [Learning Materials（学習用資料）](#4-learning-materials学習用資料)
+5. [Recommended Flow（推奨利用順）](#5-recommended-flow推奨利用順)
+6. [Scope（対象範囲）](#6-scope対象範囲)
+7. [Glossary（用語集）](#7-glossary用語集)
+8. [Document Owners and Reviewers（管理者・レビュアー）](#8-document-owners-and-reviewers管理者レビュアー)
 
 ---
 
-## 1. Project Overview（プロジェクト・学習用資料概要）
+## 1. Project Overview（概要）
 
-SCAO Learning Kit は、初学者が、AIを活用してポートフォリオや小規模アプリを作成する際に、目的・要求・要件・設計・生成AIへの指示内容を整理するための学習用資料テンプレート集である。
+SCAO Learning Kit は、主にIT初学者が、生成AIを活用してポートフォリオ（PF）を設計・実装・完成させるための学習用資料集である。
 
-本リポジトリは企業の本番開発手順を完全再現するものではないが、実務で重要となる設計・データ・セキュリティ・エラー処理・レビューの考え方を、ポートフォリオ作成に必要な範囲で取り入れる。必ずL1から順に読む「教科書」ではなく、目的別に参照する「学習用資料集」である。
+本Repositoryの中心は、生成AIそのものを深く研究することではない。PF作成という具体的な目的に対して、生成AIの基本的な利用方法、メリットとデメリット、利用時の注意点、設計ドキュメント、ドキュメント管理、生成AIを活用した設計・実装の進め方を学べるようにする。
 
----
-
-## 2. Problem / Solution / Benefit Summary（課題・解決・効果の概要）
-
-各項目は概要のみを1〜2文で示す。詳細は各Level・各学習用資料本文で扱う。
-
-| Item（項目） | Summary（概要） | Detail Materials（詳細学習用資料） |
-|---|---|---|
-| Current Problems（現在の課題） | 初学者は生成AIへの指示が曖昧になりがちで、要求・要件・設計を整理しないまま作り始め、目的とずれた成果物になりやすい。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
-| Development Purpose（開発目的） | AI活用とドキュメント整理の基礎を、初学者が短時間で身につけられる学習用資料を提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) |
-| Solution Approach（解決方針） | 生成AIへの指示方法・安全・文脈管理（L1）と、要求・要件・簡易設計・ドキュメント管理（L2）を、解説とコピー可能なテンプレートで学べるようにする。 | [L2 テンプレート](./02_design_document_basics/templates/README.md) |
-| Learning Functions（学習用資料機能） | 解説用の学習用資料・移行テンプレート・設計ドキュメント標準の7ファイル構成テンプレート・自己正当化バイアス（基礎／詳細）・迎合と摩擦回避（基礎／詳細）を、Level別に提供する。 | [L1](./01_ai_basics/README.md) / [L2](./02_design_document_basics/README.md) / [L4](./04_ai_agentic_workflow/README.md) |
-| Expected Benefits（期待効果） | 生成AIとの意思疎通が正確になり、ポートフォリオの設計・説明の質が上がり、独立した確認（別の生成AI・人間・テスト）の習慣が身につく。 | [L1](./01_ai_basics/README.md) |
-| Completion Criteria（完了判定基準） | L1・L2の考え方を土台に、要求→要件→簡易設計を自力で整理し、生成AIへ具体的な実装指示ができる状態になること。 | [L2](./02_design_document_basics/README.md) |
+企業の本番開発手順を完全再現するものではないが、要求・要件・設計・データ・セキュリティ・テスト・レビュー・ドキュメント管理など、実務で重要になる考え方をPF作成に必要な範囲で取り入れる。
 
 ---
 
-## 3. Learning Materials Overview（学習用資料構成概要）
+## 2. Purpose（目的）
 
-本学習用資料集は、Level（L1〜L4）で構成する。L1・L2は初版として利用可能、L3・L4は準備中である。
+初学者がPF作成で次の状態に到達することを目的とする。
 
-- L1：生成AIを安全かつ正確に使うための基本（指示方法・Markdown・安全・LITM・自己正当化バイアス・迎合と摩擦回避・移行テンプレート）。
-- L2：作る前に整理すべき設計ドキュメントの基本（README・要求・要件・簡易設計・ドキュメント管理）と、コピーして使える設計ドキュメント標準の7ファイル構成テンプレート（README.md + 6文書）。
-- L3：ポートフォリオを設計から公開・提出まで仕上げる手順（準備中）。
-- L4：人間確認を挟みながらAIエージェントを活用する方法（準備中）。
-
-読みたい項目から参照してよいが、生成AIで成果物を作る場合はL1・L2の考え方を土台として確認することを推奨する。
-
----
-
-## 4. Learning Materials Index（学習用資料一覧）
-
-| Level | Material（学習用資料） | Status（状態） | Link（リンク） |
-|---|---|---|---|
-| L1 | 生成AI利用の基本（入口） | Draft（利用可能） | [01_ai_basics/README.md](./01_ai_basics/README.md) |
-| L1 | Markdownの基本 | Draft | [markdown_basic.md](./01_ai_basics/markdown_basic.md) |
-| L1 | 生成AIへの指示方法 | Draft | [how_to_instruct_generative_ai.md](./01_ai_basics/how_to_instruct_generative_ai.md) |
-| L1 | 生成AI利用時の安全ルール | Draft | [ai_safety_basic.md](./01_ai_basics/ai_safety_basic.md) |
-| L1 | LITMと文脈管理 | Draft | [litm_and_context_management.md](./01_ai_basics/litm_and_context_management.md) |
-| L1 | 生成AIの自己正当化バイアス 基礎編 | Draft | [self_justification_bias_basic.md](./01_ai_basics/self_justification_bias_basic.md) |
-| L1 | 生成AIの自己正当化バイアス 詳細編 | Draft | [self_justification_bias_detail.md](./01_ai_basics/self_justification_bias_detail.md) |
-| L1 | 生成AIの迎合と摩擦回避 基礎編 | Draft | [generative_ai_sycophancy_basic.md](./01_ai_basics/generative_ai_sycophancy_basic.md) |
-| L1 | 生成AIの迎合と摩擦回避 詳細編 | Draft | [generative_ai_sycophancy_detail.md](./01_ai_basics/generative_ai_sycophancy_detail.md) |
-| L1 | 移行テンプレート | Draft | [migration_context_template.md](./01_ai_basics/migration_context_template.md) |
-| L2 | 設計ドキュメントの基本（入口） | Draft（利用可能） | [02_design_document_basics/README.md](./02_design_document_basics/README.md) |
-| L2 | READMEの基本 | Draft | [readme_basic.md](./02_design_document_basics/readme_basic.md) |
-| L2 | 要求の基本 | Draft | [request_definition_basic.md](./02_design_document_basics/request_definition_basic.md) |
-| L2 | 要件の基本 | Draft | [requirements_definition_basic.md](./02_design_document_basics/requirements_definition_basic.md) |
-| L2 | 簡易設計の基本 | Draft | [simple_design_basic.md](./02_design_document_basics/simple_design_basic.md) |
-| L2 | ドキュメント管理の基本 | Draft | [document_management_basic.md](./02_design_document_basics/document_management_basic.md) |
-| L2 | 設計テンプレート: README.md（設計書一覧） | Draft | [templates/README.md](./02_design_document_basics/templates/README.md) |
-| L2 | 設計テンプレート: 01_REQUEST_DEFINITION.md（要求定義） | Draft | [templates/01_REQUEST_DEFINITION.md](./02_design_document_basics/templates/01_REQUEST_DEFINITION.md) |
-| L2 | 設計テンプレート: 02_REQUIREMENTS_DEFINITION.md（要件定義） | Draft | [templates/02_REQUIREMENTS_DEFINITION.md](./02_design_document_basics/templates/02_REQUIREMENTS_DEFINITION.md) |
-| L2 | 設計テンプレート: 03_DATA_AND_SECURITY_DESIGN.md（データ・セキュリティ設計） | Draft | [templates/03_DATA_AND_SECURITY_DESIGN.md](./02_design_document_basics/templates/03_DATA_AND_SECURITY_DESIGN.md) |
-| L2 | 設計テンプレート: 04_UI_AND_FLOW_DESIGN.md（UI・フロー設計） | Draft | [templates/04_UI_AND_FLOW_DESIGN.md](./02_design_document_basics/templates/04_UI_AND_FLOW_DESIGN.md) |
-| L2 | 設計テンプレート: 05_ARCHITECTURE_DESIGN.md（アーキテクチャ設計） | Draft | [templates/05_ARCHITECTURE_DESIGN.md](./02_design_document_basics/templates/05_ARCHITECTURE_DESIGN.md) |
-| L2 | 設計テンプレート: 06_OPERATION_AND_HANDOFF.md（運用・詳細設計引き継ぎ） | Draft | [templates/06_OPERATION_AND_HANDOFF.md](./02_design_document_basics/templates/06_OPERATION_AND_HANDOFF.md) |
-| L3 | ポートフォリオ作成ガイド | 準備中 | [03_portfolio_creation_guide/README.md](./03_portfolio_creation_guide/README.md) |
-| L4 | AIエージェント活用（入口） | 準備中 | [04_ai_agentic_workflow/README.md](./04_ai_agentic_workflow/README.md) |
-| L4 | Claude Codeの使い方 参考資料 | 準備中 | - |
-
-### 目的から選ぶ導線
-
-- 生成AIへの指示方法や安全な使い方を知りたい → [L1：生成AI利用の基本](./01_ai_basics/README.md)
-- 生成AIの迎合・摩擦回避を知りたい → [生成AIの迎合と摩擦回避 基礎編](./01_ai_basics/generative_ai_sycophancy_basic.md)
-- 作る前に要求・要件・設計を整理したい → [L2：設計ドキュメントの基本](./02_design_document_basics/README.md)
-- ポートフォリオの作り方の全体像を知りたい → [L3：ポートフォリオ作成ガイド（準備中）](./03_portfolio_creation_guide/README.md)
-- AIエージェントの活用を知りたい → [L4：AIエージェント活用（準備中）](./04_ai_agentic_workflow/README.md)
-- Claude Codeの概念を知りたい → Claude Codeの使い方 参考資料（準備中）
+- 生成AIに何を任せられ、何を人間が判断すべきかを理解できる。
+- 生成AIのメリットだけでなく、誤り・迎合・文脈限界・秘密情報などのリスクを理解できる。
+- 実装前に要求・要件・設計を整理できる。
+- 設計書テンプレートを使い、設計情報を文書として管理できる。
+- 生成AIを使って要求整理、設計書作成、実装指示、テスト、レビューを進められる。
+- 最終的に、設計内容と実装内容を説明できるPFを完成させられる。
 
 ---
 
-## 5. Overall Learning Policy（学習用資料全体方針）
+## 3. Learning Structure（学習構造）
 
-- 本リポジトリは実務開発フレームワークそのものではなく、実務寄りの考え方を取り入れた学習用資料集である。
-- SCAO 本体（設計標準・フレームワーク群）とは別物であり、その導入を前提としない。SCAO 本体の考え方の一部を初学者向けに噛み砕いて取り入れているが、標準の全構造をそのまま適用するものではない。
-- 対象読者は、IT職業訓練校の受講生、独学者、ポートフォリオ作成やAI活用を学ぶ人など、開発や設計を学び始めた初学者一般とする。特定の教育機関専用ではない。
-- 秘密情報の取り扱い注意：学習用資料の例やテンプレートに、実在するAPIキー・パスワード・トークン・秘密鍵・個人情報を記載しない。例示が必要な場合は `YOUR_API_KEY` のように、明らかにダミーと分かる文字列を使う。
+本Repositoryは難易度Levelではなく、PF作成時の利用目的を中心に3領域で構成する。
+
+```text
+SCAO Learning Kit
+│
+├─ 01 AIを理解して使う
+│  ├─ 生成AIの利用方法の基礎
+│  ├─ メリット
+│  ├─ デメリット・限界
+│  └─ 利用時に気をつけること
+│
+├─ 02 PFを設計・管理する
+│  ├─ 要求
+│  ├─ 要件
+│  ├─ 設計
+│  ├─ 設計書テンプレート
+│  └─ ドキュメント管理
+│
+└─ 03 AIを使ってPFを作る
+   ├─ AIを活用した要求・要件整理
+   ├─ AIを活用した設計書作成
+   ├─ AIへの実装指示
+   ├─ AI支援を利用した実装
+   ├─ テスト・レビュー
+   └─ PF完成・公開
+```
+
+3領域は独立した教材ではなく、PF完成までを支える役割分担である。
 
 ---
 
-## 6. Glossary（用語集）
+## 4. Learning Materials（学習用資料）
+
+### 01：AI利用の基礎
+
+[01_ai_basics/README.md](./01_ai_basics/README.md)
+
+PF作成で生成AIを使う前に理解しておく基礎を扱う。
+
+主な内容：
+
+- 生成AIへの指示方法
+- Markdownの基本
+- 生成AI利用時の安全ルール
+- LITMと文脈管理
+- 生成AIの誤りを維持するように見える出力挙動
+- 迎合・摩擦回避
+- チャット文脈の移行
+
+生成AIのメリット・デメリット・限界を初心者向けに一覧化する資料は、今後この領域で補完する。
+
+### 02：PF設計・ドキュメント
+
+[02_design_document_basics/README.md](./02_design_document_basics/README.md)
+
+PFを作り始める前に、目的・要求・要件・設計を整理し、設計情報を文書として管理する方法を扱う。
+
+主な内容：
+
+- READMEの基本
+- 要求の基本
+- 要件の基本
+- 簡易設計の基本
+- ドキュメント管理の基本
+- 設計ドキュメント標準の7ファイル構成テンプレート
+
+設計テンプレートのファイル名と7ファイル構成は固定し、勝手に削減・統合・renameしない。
+
+### 03：AIを活用したPF作成
+
+[03_portfolio_creation_guide/README.md](./03_portfolio_creation_guide/README.md)
+
+01と02で学んだ内容を、実際のPF作成工程へつなげる領域である。
+
+主な対象：
+
+- AIを活用した要求・要件整理
+- AIを活用した設計書作成
+- AIへの実装指示
+- AI支援を利用した実装
+- テスト・レビュー
+- README・GitHub・公開・提出までの完成工程
+
+この領域は現在整備中である。
+
+---
+
+## 5. Recommended Flow（推奨利用順）
+
+PF作成を始める場合は、次の順序を基本とする。
+
+```text
+01 AI利用の基礎
+        ↓
+02 PF設計・ドキュメント
+        ↓
+03 AIを活用したPF作成
+        ↓
+PF完成・公開・説明
+```
+
+すべての資料を最初から順番に読む必要はない。必要な資料を参照しながらPF作成を進める。ただし、生成AIへ実装を指示する前に、少なくとも生成AI利用時の注意事項と要求・要件・設計の基本は確認することを推奨する。
+
+---
+
+## 6. Scope（対象範囲）
+
+### 対象
+
+- IT初学者
+- 職業訓練校生
+- 独学でPFを作成する人
+- 生成AIを利用して小規模アプリを作りたい人
+
+### 現在の初版対象外
+
+- AIエージェントを中心とした自律・半自律開発
+- Claude Code、Codex等の個別エージェント製品を中心とした高度な運用
+- Harness Engineering等の発展的なAI開発運用
+
+これらはLearning Kitの主要部分完成後に発展編として検討する。
+
+### 学習用資料としての位置づけ
+
+- 本Repositoryは実務開発フレームワークそのものではない。
+- SCAO本体の導入を前提としない。
+- SCAOの設計思想のうち、初学者のPF作成に有効な考え方を学習用に取り入れる。
+- 秘密情報、APIキー、パスワード、トークン、秘密鍵、個人情報を教材例やGitへ記載しない。
+
+---
+
+## 7. Glossary（用語集）
 
 ### SCAOとは
 
 SCAO（SPEC-Core Architecture - O）は、人間が定めたSPECを中心に、複数の生成AIへ調査・設計・実装・レビューの役割を分担させる開発方式である。
 
-目的は、生成AIの推測・迎合・誤実装を抑え、SPEC・設計書・実装の不整合を防ぐことにある。また、初学者が実務に近い開発手順を学ぶための枠組みとしても利用する。
-
-一言で表すと、**「SPECを法律とし、人間が複数AIを役割分担で統治する開発方式」**である。
+本Learning KitはSCAO本体ではなく、その考え方の一部を初学者向けのPF作成教材として利用する。
 
 | Term（用語） | Definition（定義） |
 |---|---|
-| SCAO | 設計標準・フレームワーク群からなる本体。本学習用資料集はその考え方の一部を学習用に噛み砕いたもので、本体とは別物。 |
+| PF | Portfolio（ポートフォリオ）。学習成果・設計・実装・説明を示すための成果物。 |
 | 生成AI | ChatGPT、Gemini、Claude、Cursorなど、利用者の入力に応じて文章・コード・画像等を生成するサービス・ツールの総称。 |
-| LLM | 大規模言語モデル。トークン・コンテキスト・次トークン予測・推論・ハルシネーション・自己訂正など、モデル内部の特性・能力・限界を説明するときに用いる。 |
-| AIエージェント | 生成AIがツール・ファイル・コマンド・外部サービスを利用し、複数工程を実行する場合の呼び方。通常の質問応答だけでは呼ばない。 |
-| 指示 | 生成AIへ与える要求全体（目的・前提・対象範囲・制約・出力形式・完了条件・検証方法・停止条件など）。 |
+| LLM | 大規模言語モデル。生成AIを支える主要技術の一つ。 |
+| 指示 | 生成AIへ与える要求全体。目的・前提・対象範囲・制約・出力形式・完了条件などを含む。 |
 | プロンプト | 指示を生成AIへ実際に入力する文章・質問・命令・データ。 |
-| LITM（Lost in the Middle） | 長い文脈の中間にある重要情報が、相対的に参照されにくくなる傾向。 |
-| 自己正当化バイアス（Self-Justification Bias） | 生成AIが過去の誤回答・誤判断・誤設計を明確に撤回せず、後付けの理由・一般論・曖昧化によって維持または補強するように見える出力挙動。心理状態の断定ではない。 |
-| 迎合・摩擦回避（Sycophancy関連） | 生成AIが人間の誤りや矛盾を明確に指摘せず、人間の主張へ合わせ、必要な反論が弱められるように見える出力挙動。心理状態の断定ではない。 |
-| 要求（Request） | 何を達成したいか（目的側）の整理。 |
-| 要件（Requirements） | システムが満たすべき条件（実現側）の整理。 |
-| 簡易設計（Simple Design） | 要件を「どう作るか」に落とす設計の考え方。学習用・小規模向けでも設計内容は削減せず、標準の設計ドキュメント（データ・セキュリティ／UI・フロー／アーキテクチャ／運用の各文書）に分けて整理する。 |
-| 正本（Canonical Document） | 「これが正しい」と定めた一次情報。重複管理を避けるための基準。 |
+| LITM（Lost in the Middle） | 長い文脈の中間にある重要情報が相対的に参照されにくくなる傾向。 |
+| 自己正当化バイアス（Self-Justification Bias） | 生成AIが過去の誤回答・誤判断を明確に撤回せず、後付け理由などによって維持するように見える出力挙動。本資料では心理状態を意味しない。 |
+| 迎合・摩擦回避（Sycophancy関連） | 生成AIが利用者の誤りや矛盾を十分に指摘せず、利用者の主張へ合わせるように見える出力挙動。 |
+| 要求（Request） | 何を達成したいか、なぜ必要かを整理したもの。 |
+| 要件（Requirements） | システムが満たすべき条件を整理したもの。 |
+| 設計（Design） | 要求・要件を、どのような構造・データ・画面・処理・運用で実現するか整理したもの。 |
+| 正本（Canonical Document） | 現在有効な情報として扱う基準文書。 |
 
 ---
 
-## 7. Document Owners and Reviewers（管理者・レビュアー）
+## 8. Document Owners and Reviewers（管理者・レビュアー）
 
 | Role（役割） | Name（氏名） | Scope（担当範囲） |
 |---|---|---|
