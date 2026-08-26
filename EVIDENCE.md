@@ -130,3 +130,11 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 3. **Provider**: GitHub
 4. **Source Title**: GitHub Flavored Markdown Spec
 5. **URL**: https://github.github.com/gfm/
+
+## EV-014
+
+1. **Type**: `PREPRINT`
+2. **Status**: `ACTIVE`
+3. **Provider**: arXiv
+4. **Source Title**: Large Language Models Cannot Self-Correct Reasoning Yet
+5. **URL**: https://arxiv.org/abs/2310.01798

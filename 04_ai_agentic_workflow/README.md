@@ -8,20 +8,9 @@
 | Version（バージョン） | 0.6 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
-| Last Updated（最終更新日） | 2026-07-15 |
+| Last Updated（最終更新日） | 2026-08-26 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [トップ](../README.md) / [L1：生成AI利用の基本](../01_ai_basics/README.md) |
-
----
-
-## Table of Contents（目次）
-
-1. [Purpose（目的）](#1-purpose目的)
-2. [Target Audience（対象読者）](#2-target-audience対象読者)
-3. [Learning Materials Index（学習用資料一覧）](#3-learning-materials-index学習用資料一覧)
-4. [Usage Guide（利用方法）](#4-usage-guide利用方法)
-5. [Current Status（現在状態）](#5-current-status現在状態)
-6. [Related Materials（関連資料）](#6-related-materials関連資料)
+| Related Documents（関連文書） | [トップ](../README.md) / [01：AI利用の基礎](../01_ai_basics/README.md) |
 
 ---
 
@@ -29,9 +18,11 @@
 
 AIエージェントを、人間の確認を挟みながら安全に活用できるように導くこと。
 
+> この領域は現在の初版学習導線から外している。物理Fileは維持し、主要教材完成後に発展編として再検討する。
+
 ## 2. Target Audience（対象読者）
 
-- L1（特に生成AIの自己正当化バイアス・迎合と摩擦回避）を踏まえ、AIエージェントの半自動ループを安全に組みたい人
+- 01の基礎を理解した上で、AIエージェントの半自動・自動処理を学びたい人
 
 ## 3. Learning Materials Index（学習用資料一覧）
 
@@ -39,24 +30,27 @@ AIエージェントを、人間の確認を挟みながら安全に活用でき
 |---|---|---|
 | Claude Codeの使い方 参考資料 | 準備中 | - |
 
-Claude Codeの使い方 参考資料は、内容精査中のため準備中です。
-
-この領域は全体として準備中である。次の対象は名称のみを示し、本文説明はまだ作成していない。
+この領域は全体として準備中である。
 
 - Cursor Agent
 - Codex
-- Harness Engineering（ハーネスエンジニアリング）
+- Harness Engineering
 - 人間確認ゲート付き半自動ループ
 
 ## 4. Usage Guide（利用方法）
 
-この領域は準備中である。Claude Codeの使い方 参考資料は、内容精査中のため準備中です。あわせて [L1：生成AI利用の基本](../01_ai_basics/README.md) の [生成AIの自己正当化バイアス 詳細編](../01_ai_basics/self_justification_bias_detail.md) と [生成AIの迎合と摩擦回避 基礎編](../01_ai_basics/generative_ai_sycophancy_basic.md) を参照し、同じ生成AIに作成と最終判定を独占させない考え方、迎合への外部ブレーキを確認することを推奨する。
+現時点では初版の主学習導線として利用しない。
+
+将来この領域を学ぶ場合は、先に [01：AI利用の基礎](../01_ai_basics/README.md) を確認し、必要に応じて次の `[発展]` 資料を参照する。
+
+- [生成AIの自己正当化バイアス 詳細編](../01_ai_basics/self_justification_bias_detail.md)
+- [生成AIの迎合と摩擦回避 詳細編](../01_ai_basics/generative_ai_sycophancy_detail.md)
 
 ## 5. Current Status（現在状態）
 
-準備中（Preparing）。Claude Codeの使い方 参考資料も含め、学習用資料・詳細章・実装手順は現時点では利用可能な公開資料として扱わない。
+準備中（Preparing）。現在の初版整備対象外であり、主要教材として扱わない。
 
 ## 6. Related Materials（関連資料）
 
 - [トップに戻る](../README.md)
-- [L1：生成AI利用の基本](../01_ai_basics/README.md)
+- [01：AI利用の基礎](../01_ai_basics/README.md)
