@@ -106,3 +106,27 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 3. **Provider**: Anthropic
 4. **Source Title**: Tool use with Claude
 5. **URL**: https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview
+
+## EV-011
+
+1. **Type**: `TECHNICAL_REPORT`
+2. **Status**: `ACTIVE`
+3. **Provider**: NIST
+4. **Source Title**: Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile
+5. **URL**: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+
+## EV-012
+
+1. **Type**: `OFFICIAL_DOC`
+2. **Status**: `ACTIVE`
+3. **Provider**: GitHub
+4. **Source Title**: Removing sensitive data from a repository
+5. **URL**: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+
+## EV-013
+
+1. **Type**: `OFFICIAL_SPEC`
+2. **Status**: `ACTIVE`
+3. **Provider**: GitHub
+4. **Source Title**: GitHub Flavored Markdown Spec
+5. **URL**: https://github.github.com/gfm/
