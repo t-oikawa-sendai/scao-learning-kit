@@ -32,8 +32,8 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 1. **Type**: `OFFICIAL_DOC`
 2. **Status**: `ACTIVE`
 3. **Provider**: OpenAI
-4. **Source Title**: Model guidance — Using GPT-5.5
-5. **URL**: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.5
+4. **Source Title**: Model guidance — Using GPT-5.6
+5. **URL**: https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6
 
 ## EV-002
 
@@ -138,3 +138,19 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 3. **Provider**: arXiv
 4. **Source Title**: Large Language Models Cannot Self-Correct Reasoning Yet
 5. **URL**: https://arxiv.org/abs/2310.01798
+
+## EV-015
+
+1. **Type**: `OFFICIAL_DOC`
+2. **Status**: `ACTIVE`
+3. **Provider**: Google
+4. **Source Title**: Long context — Gemini API
+5. **URL**: https://ai.google.dev/gemini-api/docs/long-context
+
+## EV-016
+
+1. **Type**: `OFFICIAL_DOC`
+2. **Status**: `ACTIVE`
+3. **Provider**: Microsoft
+4. **Source Title**: Transparency Note: Phi Silica
+5. **URL**: https://learn.microsoft.com/en-us/windows/ai/apis/phi-silica-transparency-note
