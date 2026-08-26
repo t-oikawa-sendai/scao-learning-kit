@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-01-AI-OVERVIEW |
-| Version（バージョン） | 0.2 |
+| Version（バージョン） | 0.3 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-08-26 |
 | Last Updated（最終更新日） | 2026-08-26 |
@@ -185,7 +185,7 @@ RAGとMCPはいずれも生成AIの外側にある情報・機能と関係する
 
 RAG（Retrieval-Augmented Generation）は、質問に関係する外部情報を検索・取得し、その情報を使って生成する考え方である。原論文では、言語モデルの内部知識と外部のnon-parametric memoryを組み合わせる方式として提案された。[NeurIPS原論文](https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html)
 
-MCP（Model Context Protocol）は、LLMアプリケーションと外部データ・Toolを接続するためのProtocolである。[MCP公式Specification](https://modelcontextprotocol.io/specification/2025-11-25)
+MCP（Model Context Protocol）は、LLMアプリケーションと外部データ・Toolを接続するためのProtocolである。[MCP公式Specification](https://modelcontextprotocol.io/specification/2026-07-28)
 
 ```mermaid
 flowchart LR
@@ -313,7 +313,7 @@ LITM、迎合、自己正当化をより詳しく理解したい場合は、`[�
 - **EV-001**：[OpenAI — Model guidance: Using GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 - **EV-002**：[Google — Gemini 3 developer guide](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
 - **EV-003**：[Anthropic — Prompting Claude Opus 5](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5)
-- **EV-004**：[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25)
+- **EV-017**：[Model Context Protocol Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28)
 - **EV-005**：[Lost in the Middle: How Language Models Use Long Contexts](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00638/119630/Lost-in-the-Middle-How-Language-Models-Use-Long)
 - **EV-006**：[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html)
 - **EV-007**：[Anthropic — Towards Understanding Sycophancy in Language Models](https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models)

@@ -6,7 +6,7 @@
 
 生成AIモデルの性能や特性は継続的に変化しており、モデルによって適切な指示方法も異なる。
 
-2026年8月時点では、OpenAIはGPT-5.5について、期待する結果・成功条件・制約を明確にし、不要なstep-by-step指示を減らしてモデル自身が解決経路を選べる余地を残す方向を案内している。[OpenAI公式](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.5)
+2026年8月時点では、OpenAIはGPT-5.6について、期待する結果・成功条件・制約を明確にし、不要なstep-by-step指示を減らしてモデル自身が解決経路を選べる余地を残す方向を案内している。[OpenAI公式](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 
 GoogleもGemini 3について、旧モデル向けの冗長・複雑なPrompt Engineeringが過剰分析につながる可能性を示し、簡潔で直接的な指示を推奨している。[Google AI公式](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
 
@@ -273,7 +273,7 @@ AnthropicのClaude Opus 5向けガイドでも、複雑なタスクでは完全�
 
 ## Evidence
 
-- **EV-001**：[OpenAI — Model guidance: Using GPT-5.5](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.5)
+- **EV-001**：[OpenAI — Model guidance: Using GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 - **EV-002**：[Google — Gemini 3 developer guide](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
 - **EV-003**：[Anthropic — Prompting Claude Opus 5](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5)
 

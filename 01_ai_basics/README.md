@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-01-INDEX |
-| Version（バージョン） | 0.7 |
+| Version（バージョン） | 0.8 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-08-26 |
@@ -44,7 +44,7 @@
 
 1. [生成AI利用の基礎 -202608-](./generative_ai_usage_overview.md)
 2. [生成AI利用時の安全ルール](./ai_safety_basic.md)
-3. [生成AIへの指示方法](./how_to_instruct_generative_ai.md)
+3. [生成AIへの指示方法 -202608-](./how_to_instruct_generative_ai.md)
 
 ### [発展]
 
@@ -60,7 +60,7 @@
 
 難易度ではなく、必要な場面で利用する実践資料。
 
-- [AI専用・新チャット文脈移行プロトコル](./migration_context_template.md)
+- [AI専用・新チャット文脈移行プロトコル -202608-](./migration_context_template.md)
 
 ---
 

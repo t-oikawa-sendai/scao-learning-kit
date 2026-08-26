@@ -9,7 +9,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-ROOT-INDEX |
-| Version（バージョン） | 0.9 |
+| Version（バージョン） | 0.10 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-08-26 |
@@ -105,7 +105,7 @@ SCAO Learning Kit
 
 1. [生成AI利用の基礎 -202608-](./01_ai_basics/generative_ai_usage_overview.md)
 2. [生成AI利用時の安全ルール](./01_ai_basics/ai_safety_basic.md)
-3. [生成AIへの指示方法](./01_ai_basics/how_to_instruct_generative_ai.md)
+3. [生成AIへの指示方法 -202608-](./01_ai_basics/how_to_instruct_generative_ai.md)
 
 詳細な特性・問題は `[発展]`、必要な場面で使うテンプレートは `[補助資料]` として分離する。
 

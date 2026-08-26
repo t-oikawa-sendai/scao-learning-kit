@@ -15,7 +15,8 @@ Repository全体はPF作成を中心に整理する。一方、`01_ai_basics/` �
 - Base branch: `main`
 - Base commit: `27a91ea494bbc489f6910de91c58774c95aae08c`
 - Working branch: `docs/ai-basics-restructure-202608`
-- Working branch latest commit: `c2b90a5635d3f041f6d5a24ed49cb4a024530663`
+- Working branch verification base commit: `cf444b1d7ee6489c537663590443083394db7cd4`
+- Working branch current HEAD: Repositoryのbranch refを実体確認する。本CURRENT内の固定SHAを最新HEADの正本とはしない。
 - `main` へのmerge: 未実施
 - 現在はWorking branch上で文書再構成・検証を行う。
 
@@ -310,17 +311,19 @@ Evidenceの自動監視・定期実行の頻度・記録単位・自動更新範
 - 迎合基礎編 / 自己正当化基礎編を入口文書へ吸収して削除。
 - 文脈移行プロトコルを `-202608-` 表示とし、モデル差の一次情報Evidenceを追加。
 - 04のREADMEから削除済み基礎編への参照を除去。
+- `CHANGELOG.md` に今回の01再構成の主要変更を記録。
+- 削除済み基礎編へのClaude Code参考資料の残存Linkを詳細編へ修正。
+- MCP Evidenceを2026-07-28 Specificationへ更新し、旧EV-004を`SUPERSEDED`、新EV-017を`ACTIVE`として管理。
+- README類のVersion / Last Updated / Statusを現行文書管理ルールへ整合。
 
 ## CURRENT WORK
 
-Working branchの内容について、次を検証・整合する。
+Working branchの最終整合commit後に、次を実体検証する。
 
-- `CHANGELOG.md` 更新
-- 本 `CURRENT.md` 更新
 - 削除・移動したFileへの残存Link確認
-- README / 01 / 02 / 04の導線整合
+- README / 01 / 02 / 03 / 04の導線整合
 - Evidence ID / URL / Type / Statusの整合
-- Mermaid構文確認
+- Mermaid構文・GitHub表示確認
 - 旧「メリット / デメリット」主構造の残存確認
 - L1等の旧表示・旧導線の残存確認
 - 7ファイル設計テンプレートが無変更であることの確認
@@ -337,11 +340,11 @@ Working branchの内容について、次を検証・整合する。
 
 ## NEXT ACTION
 
-1. `CHANGELOG.md` に2026-08-26の主要変更を反映する。
-2. Working branch全体のLink・Evidence・用語・構造を検証する。
+1. Working branchの最終commit後のHEADと差分を実体確認する。
+2. Working branch全体のLink・Evidence・用語・構造を再検証する。
 3. `main` との差分と設計テンプレート無変更を確認する。
-4. 問題があればWorking branch上で修正する。
-5. 検証結果を提示し、`main` 反映判断が必要になった時点でのみ停止する。
+4. 問題がなければ検証結果を提示する。
+5. `main` 反映判断が必要になった時点で停止する。
 
 ## RESUME ORDER
 

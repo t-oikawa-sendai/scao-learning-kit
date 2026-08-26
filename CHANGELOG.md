@@ -28,6 +28,24 @@ Git 履歴は差分確認の補助として利用する。CHANGELOG の代替と
 
 | Version | Date | Document | Category | Changes | Author |
 |---|---|---|---|---|---|
+| 0.10 | 2026-08-26 | `README.md` | Changed | Evidence Based方針をRepository上部へ追加し、01を一般的な生成AI利用基礎として再構成した導線へ整合。基礎3資料・発展・補助資料の位置づけと202608タイトル表示を反映 | Takashi Oikawa |
+| 0.8 | 2026-08-26 | `01_ai_basics/README.md` | Changed | 01を基礎 / `[発展]` / `[補助資料]` の3区分へ再構成。生成AI利用を学習・就職活動・PF・開発へ広げ、基礎3資料の順序と202608タイトル表示を固定 | Takashi Oikawa |
+| 0.3 | 2026-08-26 | `01_ai_basics/generative_ai_usage_overview.md` | Added | `生成AI利用の基礎 -202608-` を新規追加。利用場面、使い方の差、AI/LLM/SLM、Prompt/Context、RAG/MCP、Hallucination、LITM、迎合、自己正当化、ASKME、人間とAIの責務を統合。MCP Evidenceを2026-07-28 Specificationへ整合 | Takashi Oikawa |
+| 0.4 | 2026-08-26 | `01_ai_basics/ai_safety_basic.md` | Changed | 一般利用を土台に、学習・就職活動・PF・開発での個人情報・秘密情報・誤情報・ファイル/画像/ログ・Git・破壊的操作の安全ルールへ再構成 | Takashi Oikawa |
+| 0.7 | 2026-08-26 | `01_ai_basics/how_to_instruct_generative_ai.md` | Changed | 全モデル共通事項とモデル能力で変わる指示方法を分離。8要素を毎回書くTemplateではなくチェック観点として整理し、ASKMEと学習・就活・PF/開発例を追加 | Takashi Oikawa |
+| 0.4 | 2026-08-26 | `01_ai_basics/litm_and_context_management.md` | Changed | `[発展]` として再構成し、LITMの定義・長いContextのリスク・正本化・再提示・Chat移行に焦点を限定 | Takashi Oikawa |
+| 0.2 | 2026-08-26 | `01_ai_basics/generative_ai_sycophancy_detail.md` | Changed | `[発展]` として、迎合を観測可能な出力挙動として整理し、検出・Evidence確認・独立Review・利用者側の対策に集中する構成へ再設計 | Takashi Oikawa |
+| 0.7 | 2026-08-26 | `01_ai_basics/self_justification_bias_detail.md` | Changed | `[発展]` として、自己正当化に見える出力の操作上の定義、自己訂正限界、検出・訂正・外部検証へ内容を集約 | Takashi Oikawa |
+| 0.5 | 2026-08-26 | `01_ai_basics/migration_context_template.md` | Changed | 表示タイトルを `AI専用・新チャット文脈移行プロトコル -202608-` とし、高性能/旧モデルで引継ぎ情報を分割せず、指示の細かさ・AIへ任せる範囲を調整する方針へ更新。OpenAI EvidenceをGPT-5.6へ整合 | Takashi Oikawa |
+| 0.1 | 2026-08-26 | `01_ai_basics/generative_ai_sycophancy_basic.md` | Removed | 基礎内容を `generative_ai_usage_overview.md` へ吸収し、重複を避けるため削除 | Takashi Oikawa |
+| 0.5 | 2026-08-26 | `01_ai_basics/self_justification_bias_basic.md` | Removed | 基礎内容を `generative_ai_usage_overview.md` へ吸収し、重複を避けるため削除 | Takashi Oikawa |
+| 0.4 | 2026-08-26 | `02_design_document_basics/markdown_basic.md` | Added | Markdownの基本を01から02へ移動し、設計そのものではなく必要時に参照する `[補助資料]` として再配置 | Takashi Oikawa |
+| 0.6 | 2026-08-26 | `02_design_document_basics/README.md` | Changed | Markdown補助資料への導線を追加し、設計テンプレート7ファイル固定ルールを維持したまま01再構成との整合を反映 | Takashi Oikawa |
+| 0.7 | 2026-08-26 | `04_ai_agentic_workflow/README.md` | Changed | 04を初版学習導線・初版整備対象外と明示し、01の現行 `[発展]` 資料への参照へ整合 | Takashi Oikawa |
+| 0.1 | 2026-08-26 | `04_ai_agentic_workflow/claude_code_reference.md` | Fixed | 削除済み迎合基礎編への残存Linkを迎合詳細編へ修正。Versionは軽微なLink修正のため据え置き | Takashi Oikawa |
+| - | 2026-08-26 | `EVIDENCE.md` | Added | Repository全体の外部Evidence正本を追加。固定ID・Type・Statusを定義し、旧MCP 2025-11-25を`SUPERSEDED`、MCP 2026-07-28をEV-017 `ACTIVE`として登録 | Takashi Oikawa |
+| - | 2026-08-26 | `AGENTS.md` | Added | ASKME制御、Evidence Based、Document Change Ruleを恒久運用ルールとして追加 | Takashi Oikawa |
+| - | 2026-08-26 | `project-notes/CURRENT.md` | Changed | 01再構成の確定設計・Evidence方針・固定7ファイルルール・Working branch状態・残作業を正本化し、最新HEADを固定SHAで自己参照しない運用へ修正 | Takashi Oikawa |
 | 0.9 | 2026-08-24 | `README.md` | Changed | Repositoryの主目的を「IT初学者が生成AIを活用してPFを設計・実装・完成させる学習用資料集」へ明確化。L1〜L4の難易度構造を主軸から外し、01 AI利用の基礎 / 02 PF設計・ドキュメント / 03 AIを活用したPF作成の3領域へ再構成。04 AIエージェント活用を初版の有効な学習導線から除外 | Takashi Oikawa |
 | 0.7 | 2026-08-24 | `01_ai_basics/README.md` | Changed | PF作成での生成AI利用を中心に、利用方法 / 限界・注意事項 / メリット・デメリットの3観点へ再整理。既存9資料は維持し、メリット・デメリット・限界を俯瞰する専用資料の不足を明示 | Takashi Oikawa |
 | 0.5 | 2026-08-24 | `02_design_document_basics/README.md` | Changed | PF設計・ドキュメント領域として再整理。要求→要件→設計→実装指示の流れ、7ファイル設計テンプレート、ドキュメント管理の責務を明確化。7ファイル構成とファイル名固定ルールは維持 | Takashi Oikawa |

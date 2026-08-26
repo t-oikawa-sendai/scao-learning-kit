@@ -54,10 +54,11 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 ## EV-004
 
 1. **Type**: `OFFICIAL_SPEC`
-2. **Status**: `ACTIVE`
+2. **Status**: `SUPERSEDED`
 3. **Provider**: Model Context Protocol
 4. **Source Title**: Model Context Protocol Specification
 5. **URL**: https://modelcontextprotocol.io/specification/2025-11-25
+6. **Replaced By**: `EV-017`
 
 ## EV-005
 
@@ -154,3 +155,11 @@ SCAO独自の教材構成・学習順序・運用判断はEvidenceとは分離�
 3. **Provider**: Microsoft
 4. **Source Title**: Transparency Note: Phi Silica
 5. **URL**: https://learn.microsoft.com/en-us/windows/ai/apis/phi-silica-transparency-note
+
+## EV-017
+
+1. **Type**: `OFFICIAL_SPEC`
+2. **Status**: `ACTIVE`
+3. **Provider**: Model Context Protocol
+4. **Source Title**: Model Context Protocol Specification 2026-07-28
+5. **URL**: https://modelcontextprotocol.io/specification/2026-07-28

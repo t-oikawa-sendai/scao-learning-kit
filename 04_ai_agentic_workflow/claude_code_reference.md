@@ -8,9 +8,9 @@
 | Version（バージョン） | 0.1 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
-| Last Updated（最終更新日） | 2026-07-15 |
+| Last Updated（最終更新日） | 2026-08-26 |
 | Owner（管理者） | Takashi Oikawa |
-| Related Documents（関連文書） | [L4 一覧](./README.md) / [L1：生成AI利用の基本](../01_ai_basics/README.md) / [生成AIの自己正当化バイアス 詳細編](../01_ai_basics/self_justification_bias_detail.md) / [生成AIの迎合と摩擦回避 基礎編](../01_ai_basics/generative_ai_sycophancy_basic.md) |
+| Related Documents（関連文書） | [L4 一覧](./README.md) / [L1：生成AI利用の基本](../01_ai_basics/README.md) / [生成AIの自己正当化バイアス 詳細編](../01_ai_basics/self_justification_bias_detail.md) / [生成AIの迎合と摩擦回避 詳細編](../01_ai_basics/generative_ai_sycophancy_detail.md) |
 
 > **位置付け**：本資料は Claude Code の学習用参考資料であり、SCAO の仕様正本ではない。製品のインストール方法・認証・料金・コマンド・設定項目は変更され得る。導入時は Anthropic の Claude Code 公式ドキュメントで最新情報を確認すること。
 
@@ -205,5 +205,5 @@ AIエージェントの自己評価だけで「テストも問題ありません
 - [L4：AIエージェント活用](./README.md)
 - [トップ](../README.md)
 - [生成AIの自己正当化バイアス 詳細編](../01_ai_basics/self_justification_bias_detail.md)
-- [生成AIの迎合と摩擦回避 基礎編](../01_ai_basics/generative_ai_sycophancy_basic.md)
+- [生成AIの迎合と摩擦回避 詳細編](../01_ai_basics/generative_ai_sycophancy_detail.md)
 - [生成AI利用時の安全ルール](../01_ai_basics/ai_safety_basic.md)
