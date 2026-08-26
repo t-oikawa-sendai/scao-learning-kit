@@ -5,7 +5,7 @@
 | Item（項目） | Value（値） |
 |---|---|
 | Document ID（文書ID） | SLK-L1-ASK |
-| Version（バージョン） | 0.6 |
+| Version（バージョン） | 0.7 |
 | Status（ステータス） | Draft |
 | Created Date（作成日） | 2026-07-15 |
 | Last Updated（最終更新日） | 2026-08-26 |
@@ -36,24 +36,32 @@
 - 何を実現したいかを明確にする。
 - AIが判断するために必要なContextを与える。
 - 守るべき重要な制約を伝える。
-- 完了したと判断できる条件を示す。
-- 分からないことを勝手に決めさせない。
+- 何を満たせば成功・完了なのかを示す。
+- 分からない重要事項を勝手に決めさせない。
 - 重要な結果は人間が確認する。
 
 ---
 
 ## 3. モデルによって変わる部分
 
-2026年8月時点では、OpenAIはGPT-5.5について、期待する結果・成功条件・制約を明確にし、不要なstep-by-step指示を減らしてモデル自身が解決経路を選べる余地を残す方向を案内している。[OpenAI公式](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.5)
+本資料では便宜上、**2026年8月時点のGPT-5.x系、Claude Opus 5系、Gemini 3系後半以降の高性能モデル**を、近年の高性能モデル群として扱う。これは業界共通の世代分類を定義するものではない。
 
-GoogleもGemini 3について、旧モデル向けの冗長・複雑なPrompt Engineeringが過剰分析につながる可能性を示し、簡潔で直接的な指示を推奨している。[Google AI公式](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
+OpenAIはGPT-5.6について、Contextから利用者の意図を推定する能力が向上し、すべての手順を指定する必要がない場合がある一方、domain Context、重要な制約、承認境界、成功条件を引き続き明示するよう案内している。また、重複した指示や不要な例を減らすことで性能・Token効率が改善する場合があるとしている。[OpenAI公式](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 
-AnthropicのClaude Opus 5向けガイドでも、複雑なタスクでは完全なタスク仕様を与えたうえで実行を任せること、旧モデル向けの過剰な検証指示が不要になる場合があることが説明されている。[Anthropic公式](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5)
+GoogleもGemini 3について、旧モデル向けの冗長・複雑すぎるPrompt Engineeringは過剰な分析につながる可能性があり、簡潔で明確・直接的な指示を推奨している。[Google AI公式](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
+
+AnthropicのClaude Opus 5向けガイドでも、複雑なタスクでは必要な仕様・制約を与えたうえでモデルが作業を進められる形のPrompt設計が案内されている。[Anthropic公式](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5)
+
+### 3.1 共通部分
+
+目的、必要なContext、重要な制約、成功条件、人間による確認は、モデルが新しくなっても不要になるわけではない。
+
+### 3.2 変わりやすい部分
 
 | 観点 | 旧モデル・軽量モデル | 2026年8月時点の高性能モデル |
 |---|---|---|
 | 指示の中心 | 何をするかに加え、どう進めるかまで具体化した方が安定する場合がある。 | 何を達成したいかを明確にし、進め方には一定の自由度を与えられる。 |
-| 手順 | 手順や処理順を人間が具体的に示す場面が多い。 | 細かな手順を指定しすぎると、別の方法を検討する余地を狭める場合がある。 |
+| 手順 | 手順や処理順を人間が具体的に示す場面がある。 | 細かな手順を指定しすぎると、別の方法を検討する余地を狭める場合がある。 |
 | Promptの詳細度 | 具体例・形式・手順を追加して意図を補う場合がある。 | 不要な重複や、結果に影響しない細かな指定を減らせる場合がある。 |
 | AIに任せる範囲 | 人間が知っている進め方を示し、その通りに処理させる場面が多い。 | 目的と条件を示し、実現方法そのものをAIから提案させられる範囲が広い。 |
 
@@ -62,6 +70,8 @@ AnthropicのClaude Opus 5向けガイドでも、複雑なタスクでは完全�
 利用者が進め方を細かく固定しすぎると、AIの提案まで利用者自身の知識や経験の範囲に限定することがある。AIに一定の自由度を与えることで、利用者が知らなかった方法や選択肢を得られる可能性がある。
 
 ただし、AIが提案した方法を採用するかどうかは人間が判断する。
+
+また、常に最新モデルを使うとは限らない。旧モデル・軽量モデルでは、モデルやTaskによって、より具体的な手順や形式を示した方が安定する場合がある。利用モデルの特性に応じて指示の粒度を調整する。
 
 ---
 
@@ -86,7 +96,7 @@ AnthropicのClaude Opus 5向けガイドでも、複雑なタスクでは完全�
 
 AIに自由度を与えることと、未確定事項まで勝手に補完させることは別である。
 
-判断によって結果が大きく変わる情報が不足している場合は、AIから利用者へ確認させる。
+判断によって結果が大きく変わる情報が不足している場合は、AIから利用者へ確認させる。GPT-5.6向けのOpenAI公式ガイダンスでも、重要な曖昧さが質問を必要とする場合、その境界を示すことが案内されている。[OpenAI公式](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 
 例：
 
@@ -135,6 +145,7 @@ ASKMEの目的は質問を増やすことではない。**利用者が決める�
 - 何を実現したいかが明確か。
 - AIが判断するためのContextが不足していないか。
 - 重要な制約だけを明確にできているか。
+- 成功・完了条件が必要なTaskでは、それを示しているか。
 - 利用者自身の知識で進め方を固定しすぎていないか。
 - AIに提案の余地を残しているか。
 - 人間が判断すべき未確定事項をASKMEさせているか。
@@ -144,7 +155,7 @@ ASKMEの目的は質問を増やすことではない。**利用者が決める�
 
 ## 8. Evidence
 
-- **EV-001**：[OpenAI — Model guidance: Using GPT-5.5](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.5)
+- **EV-001**：[OpenAI — Model guidance: Using GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6)
 - **EV-002**：[Google — Gemini 3 developer guide](https://ai.google.dev/gemini-api/docs/gemini-3?hl=ja)
 - **EV-003**：[Anthropic — Prompting Claude Opus 5](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5)
 
